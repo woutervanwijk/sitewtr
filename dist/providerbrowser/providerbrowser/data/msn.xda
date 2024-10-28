@@ -1,0 +1,390 @@
+<?xml version = "1.0" ?>
+<ControlsData-list>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <BackColor>4444BB</BackColor>
+  <ControlType>Panel</ControlType>
+  <Picture>msn\msntoolbarback.bmp</Picture>
+  <Height>98</Height>
+  <Left>0</Left>
+  <Name>ControlsPanel</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+  <ControlsData>
+  <Align>Left</Align>
+  <ControlType>Panel</ControlType>
+  <Picture>msn\msnzijbalkback.bmp</Picture>
+  <Height>100%</Height>
+  <LayOut>tile</LayOut>
+  <Left>0</Left>
+  <Name>LeftPanel</Name>
+  <Top>0</Top>
+  <Width>143</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Splitter</ControlType>
+  <Align>Left</Align>
+  <Height>100&#x25;</Height>
+  <Left>200</Left>
+  <Color>333399</Color>
+  <Name>ZijSplitter</Name>
+  <Top>0</Top>
+  <Width>3</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <Action>go</Action>
+  <Color>ffffff</Color>
+  <MouseOverColor>ffff66</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Description>MSN Cars!!!</Description>
+  <LayOut>Pictureright fontbold textleft</LayOut>
+  <Height>25</Height>
+  <Caption>My Car</Caption> 
+  <Left>0</Left>
+  <Location>http://www.carpoint.com/</Location>
+  <Picture>msn\msncars.bmp</Picture>
+  <MouseOverPicture>msn\msncarsmouseover.bmp</MouseOverPicture>
+  <Parent>LeftPanel</Parent>
+  <Name>MyCars</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <ControlType>Image</ControlType>
+  <Height>5</Height>
+  <LayOut>Pictureright</LayOut>
+  <Left>0</Left>
+  <Picture>msn\msnzijbalkstreep.bmp</Picture>
+  <Parent>LeftPanel</Parent>
+  <Name>Zijstreep</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <Action>go</Action>
+  <Color>ffffff</Color>
+  <MouseOverColor>ffff66</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Description>MSN MY PHOTO'S!!!</Description>
+  <Height>25</Height>
+  <Caption>My Photos</Caption> 
+  <Left>0</Left>
+  <LayOut>Pictureright fontbold textleft</LayOut>
+  <Location>http://communities.msn.com/photoalbums</Location>
+  <Picture>msn\msnphotos.bmp</Picture>
+  <MouseOverPicture>msn\msnphotosmouseover.bmp</MouseOverPicture>
+  <Parent>LeftPanel</Parent>
+  <Name>MyPhotos</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <ControlType>Image</ControlType>
+  <Height>5</Height>
+  <LayOut>Pictureright</LayOut>
+  <Left>0</Left>
+  <Picture>msn\msnzijbalkstreep.bmp</Picture>
+  <Parent>LeftPanel</Parent>
+  <Name>Zijstreep</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <Action>go</Action>
+  <Color>ffffff</Color>
+  <LayOut>Pictureright fontbold textleft</LayOut>
+  <MouseOverColor>ffff66</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Description>MSN MY Stocks!!!</Description>
+  <Height>25</Height>
+  <Caption>My Stocks</Caption> 
+  <Left>0</Left>
+  <Location>http://go.msn.com/0/7/</Location>
+  <Picture>msn\msnstocks.bmp</Picture>
+  <MouseOverPicture>msn\msnstocksmouseover.bmp</MouseOverPicture>
+  <Parent>LeftPanel</Parent>
+  <Name>Stocks</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Height>5</Height>
+  <LayOut>Pictureright stretch</LayOut>
+  <Left>0</Left>
+  <Picture>msn\msnzijbalkstreep.bmp</Picture>
+  <Parent>LeftPanel</Parent>
+  <Name>Zijstreep</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <Align>Top</Align>
+  <Color>ffffff</Color>
+  <LayOut>Pictureright fontbold textleft</LayOut>
+  <MouseOverColor>ffff66</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Description>MSN MY Radio!!!</Description>
+  <Height>25</Height>
+  <Caption>My Radio</Caption> 
+  <Left>0</Left>
+  <Location>http://www.myradio.com/</Location>
+  <Picture>msn\msnradio.bmp</Picture>
+  <MouseOverPicture>msn\msnradiomouseover.bmp</MouseOverPicture>
+  <Parent>LeftPanel</Parent>
+  <Name>Radio</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <ControlType>Image</ControlType>
+  <Height>5</Height>
+  <LayOut>Pictureright</LayOut>
+  <Left>0</Left>
+  <Picture>msn\msnzijbalkstreep.bmp</Picture>
+  <Parent>LeftPanel</Parent>
+  <Name>Zijstreep</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <Action>go</Action>
+  <Color>ffffff</Color>
+  <LayOut>Pictureright textleft</LayOut>
+  <MouseOverColor>ffff66</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Description>MSN Search</Description>
+  <Height>50</Height>
+  <Left>0</Left>
+  <Location>Se</Location>
+  <Picture>msn\msnzijbalksearch.bmp</Picture>
+  <Parent>LeftPanel</Parent>
+  <Name>Search</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <Caption>Translate with Babylon</Caption>
+  <Action>HttpGet</Action>
+  <ControlType>TextBox</ControlType>
+  <Parent>LeftPanel</Parent>
+  <Height>20</Height>
+  <Left>10</Left>
+  <Location>http://online.babylon.com/combo/index.html?word=</Location>
+  <Name>TextTranslate</Name>
+  <Top>20</Top>
+  <Width>80</Width>
+  </ControlsData>
+
+
+  <ControlsData>
+  <Align>Top</Align>
+  <Action>HttpGet</Action>
+  <ControlType>TextBox</ControlType>
+  <Description>Location!</Description>
+  <Parent>LeftPanel</Parent>
+  <Height>20</Height>
+  <Left>10</Left>
+  <Location>http://search.msn.com/results.asp?form=MSN6B&q=</Location>
+  <Name>TextSearch</Name>
+  <Top>20</Top>
+  <Width>80</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Action>Forward</Action>
+  <Description>Forward?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>50</Height>
+  <Left>70</Left>
+  <Location>Browser:Forward</Location>
+  <Picture>msn\msnforward.bmp</Picture>
+  <MouseOverPicture>msn\msnforwardmouseover.bmp</MouseOverPicture>
+  <DownPicture>msn\msnforward.bmp</DownPicture>
+  <Parent>ControlsPanel</Parent>
+  <Name>Forward</Name>
+  <Top>5</Top>
+  <Width>50</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Color>ffffff</Color>
+  <MouseOverColor>ffff66</MouseOverColor>
+  <Action>Refresh</Action>
+  <Description>Refresh?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>30</Height>
+  <Caption>Refresh</Caption>  
+  <Left>420</Left>
+  <Location>Browser:Refresh</Location>
+  <Parent>ControlsPanel</Parent>
+  <Name>Refresh</Name>
+  <Top>63</Top>
+  <Width>50</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>ffffff</Color>
+  <MouseOverColor>ffff66</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>Stop</Action>
+  <Description>Stop?!!</Description>
+  <Height>30</Height>
+  <Caption>Stop</Caption>  
+  <Left>370</Left>
+  <Location>Browser:Stop</Location>
+  <Parent>ControlsPanel</Parent>
+  <Name>Stop</Name>
+  <Top>63</Top>
+  <Width>50</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>ffffff</Color>
+  <MouseOverColor>ffff66</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>internetoptions</Action>
+  <Height>30</Height>
+  <Caption>Options</Caption>  
+  <Left>470</Left>
+  <Parent>ControlsPanel</Parent>
+  <Name>Stop</Name>
+  <Top>63</Top>
+  <Width>50</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Action>go</Action>
+  <Description>Bookmarks</Description>
+  <Height>65</Height>
+  <Caption>Favorites</Caption>  
+  <Left>261</Left>
+  <Location>%favoritesdir%</Location>
+  <Picture>msn\msnfavorites.bmp</Picture>
+  <MouseOverPicture>msn\msnfavoritesmouseover.bmp</MouseOverPicture>
+  <Parent>ControlsPanel</Parent>
+  <Color>333388</Color>
+  <Name>Favorites</Name>
+  <Top>0</Top>
+  <Width>60</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Action>go</Action>
+  <Description>E-mail</Description>
+  <Height>65</Height>
+  <Caption>E-Mail</Caption>  
+  <Left>201</Left>
+  <Location>http://www.hotmail.com/</Location>
+  <Color>333388</Color>
+  <Picture>msn\msnemail.bmp</Picture>
+  <MouseOverPicture>msn\msnemailmouseover.bmp</MouseOverPicture>
+  <Parent>ControlsPanel</Parent>
+  <Name>email</Name>
+  <Top>0</Top>
+  <Width>60</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Action>go</Action>
+  <Description>The Homepage</Description>
+  <Height>65</Height>
+  <Caption>Home</Caption>  
+  <Left>141</Left>
+  <Location>http://www.msn.nl/</Location>
+  <Picture>msn\msnlogobutton.bmp</Picture>
+  <Color>333388</Color>
+  <MouseOverPicture>msn\msnlogobuttonmouseover.bmp</MouseOverPicture>
+  <Parent>ControlsPanel</Parent>
+  <Name>Home</Name>
+  <Top>0</Top>
+  <Width>60</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>Back</Action>
+  <ControlType>Image</ControlType>
+  <Description>Back?!!</Description>
+  <Parent>ControlsPanel</Parent>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>50</Height>
+  <Left>20</Left>
+  <Location>Browser:Back</Location>
+  <Picture>msn\msnback.bmp</Picture>
+  <MouseOverPicture>msn\msnbackmouseover.bmp</MouseOverPicture>
+  <DownPicture>msn\msnback.bmp</DownPicture>
+  <Name>Back</Name>
+  <Top>5</Top>
+  <Width>50</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>TextBox</ControlType>
+  <DependsOn>ProjectViewer</DependsOn>
+  <Description>Location!</Description>
+  <Parent>ControlsPanel</Parent>
+  <Height>20</Height>
+  <Left>6</Left>
+  <Location>ddhuh</Location>
+  <Name>Textloc</Name>
+  <Top>74</Top>
+  <Width>350</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Bottom</Align>
+  <Action>setproject</Action>
+  <ControlType>TabBar</ControlType>
+  <DependsOn>Stop Text Tabs2</DependsOn>
+  <Height>23</Height>
+  <Description>Click Here!!</Description>
+  <Left>0</Left>
+  <Location>A</Location>
+  <Name>Tabs2</Name>
+  <Top>100%</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Client</Align>
+  <ControlType>Project</ControlType>
+  <DependsOn>All Textloc Refresh Stop Forward Back Text Tabs2</DependsOn>
+  <Description>Click Here!!</Description>
+  <Left>0</Left>
+  <Location>controls/msnbrowser.xdc</Location>
+  <Name>ProjectViewer</Name>
+  <Top>0</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+</ControlsData-list>

@@ -1,0 +1,12 @@
+<?xml version = "1.0" ?>
+  <Document>
+  <Connections>
+
+  </Connections>
+  <ContentType>URL</ContentType>
+  <DataSource>http&#x3A;&#x2F;&#x2F;www&#x2E;nu&#x2E;nl&#x2F;</DataSource>
+  <Location>httpwwwnunl&#x2E;xdd</Location>
+  <Name>Nu</Name>
+  <Picture>nu.ico</Picture>
+  <TechnicalType>nl&#x2F;</TechnicalType>
+  </Document>

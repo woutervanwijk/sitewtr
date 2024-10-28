@@ -1,0 +1,8 @@
+a		{color: #ffffff; background: transparent; text-decoration: none;}
+a:hover		{color: #ffff00; background: transparent; text-decoration: none;}
+body		{margin: 3px; padding: 0px;}
+.links		{font-family: verdana,arial,helvetica,sans-serif; font-size: 7pt; color: #ffffff; text-decoration: none;}
+.item		{font-family: verdana,arial,helvetica,sans-serif; font-size: 7pt; font-weight: bold; color: #ffff00; text-decoration: underline;}
+.teller		{font-family: verdana,arial,helvetica,sans-serif; font-size: 7pt; color: #000000; background-color: #ffffff; text-decoration: none; text-align: center; background-image: url(gfx/teller2.png);}
+A.streep	{font-family: verdana,arial,helvetica,sans-serif; font-size: 10px; font-weight: bold; color: #000000; text-decoration : underline;}
+.kop		{font-family: verdana,arial,helvetica,sans-serif; font-size: 10px; font-weight: bold; color: #000000; background-color: #e6e9f1;}

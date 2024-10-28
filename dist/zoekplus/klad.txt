@@ -1,0 +1,16 @@
+
+<div class="nobar" style="text-align: right;">
+
+<div id="homepage" class="nobar" align="left">
+<p><input type="checkbox" id="checktarget" onclick="return changeTarget()" /><label for="checktarget">Open in nieuw venster</label></p>
+<p><a href="#" onclick="setHomePage();return true;" id="home">Maak Startpagina</a> / 
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">var addthis_pub="zoekplus";
+var addthis_language = "nl"; 
+var addthis_brand = "Zoek+";
+</script>
+<a href="http://www.addthis.com/bookmark.php?v=20" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s7.addthis.com/static/btn/sm-share-nl.gif" width="83" height="16" alt="Delen" style="margin-bottom: -.5em; border:0;"/></a><script type="text/javascript" src="http://s7.addthis.com/js/200/addthis_widget.js"></script>
+<!-- AddThis Button END -->
+</p></div>
+
+

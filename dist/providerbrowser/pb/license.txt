@@ -1,0 +1,24 @@
+Provider Browser is a shareware program. Use at your own risk. The author or distributor can't be held responsible for things like loss of data, computer or software crashes, or any other direct or indirect, expected or unexpected, result of using the software. The user must assume the entire risk of using the program. 
+
+Provider Browser 
+Copyright © 2002-2003 MediaVilla. All rights reserved.
+
+License
+
+By using, copying or installing Provider Browser, you agree to all of the terms of this License. If you do not agree to any of the terms of this License, then do not use, copy or install Provider Browser.
+
+You are licensed by MediaVilla to use this software for evaluation purposes without charge for a period of 90 days. If you use this software after the evaluation period, you'll have to register the software. More information available at the Provider Browser web site at http://foldermanager.mediavilla.nl. 
+
+Provider Browser IS PROVIDED UNDER THIS LICENSE ON AN "AS IS" BASIS, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT Provider Browser IS FREE OF DEFECTS, MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF Provider Browser IS WITH YOU. SHOULD Provider Browser PROVE DEFECTIVE IN ANY RESPECT, YOU ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY SOFTWARE IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.
+
+UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL MEDIAVILLA, ANY DEVELOPER OR ANY DISTRIBUTOR OF Provider Browser, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. 
+
+REGARDLESS OF THE FORM OF ACTION, MEDIAVILLA AND ITS SUPPLIERS AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT SHALL NOT EXCEED THE TOTAL AMOUNT PAYABLE BY YOU UNDER THIS AGREEMENT. THE FOREGOING LIMITATIONS, EXCLUSIONS AND DISCLAIMERS SHALL APPLY TO THE MAXIMUM EXTENT ALLOWED BY APPLICABLE LAW.
+
+In no event does MediaVilla authorize you to use Provider Browser in applications or systems where Provider Browser's failure to perform can reasonably be expected to result in loss of data, a physical injury, or loss of life. Any such use by you is entirely at your own risk, and you agree to hold MediaVilla harmless from any claims or losses relating to such unauthorized use.
+
+Provider Browser is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties.
+
+You may not rent, lease, modify, translate, reverse engineer, decompile, disassemble or create derivative works based on Provider Browser. You may not make access to Provider Browser available to others in connection with a service bureau, application service provider or similar business. There are no third party beneficiaries of any promises, obligations or representations made by MediaVilla herein.
+
+The unregistered shareware version of Provider Browser may be freely distributed, provided the distribution package is not modified. No person or company may charge a fee for the distribution of Provider Browser without written permission from the copyright holder. MediaVilla reserves the right to revoke the distribution rights at any time, for any or no reason.

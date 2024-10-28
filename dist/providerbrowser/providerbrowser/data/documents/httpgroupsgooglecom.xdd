@@ -1,0 +1,11 @@
+<?xml version = "1.0" ?>
+  <Document>
+  <Connections>
+
+  </Connections>
+  <ContentType>URL</ContentType>
+  <DataSource>http&#x3A;&#x2F;&#x2F;groups&#x2E;google&#x2E;com&#x2F;</DataSource>
+  <Location>httpgroupsgooglecom&#x2E;xdd</Location>
+  <Name>Google Groups</Name>
+  <TechnicalType>com&#x2F;</TechnicalType>
+  </Document>

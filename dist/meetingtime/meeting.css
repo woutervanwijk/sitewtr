@@ -1,0 +1,114 @@
+/*
+
+Styling the counter itself.
+Set image paths accordingly.
+
+THIS YOU NEED TO KEEP.
+
+So you can have multiple counters on a page, just make sure each one has a class of "flip-counter".
+
+*/
+
+.flip-counter ul.cd{float:left;list-style-type:none;margin:0;padding:0; clear: none;}
+.flip-counter li{background:url(img/digits.png) 0 0 no-repeat; clear: none;}
+.flip-counter li.t{background-position:0 0;width:53px;height:39px; clear: none;}
+.flip-counter li.b{background-position:0 0;width:53px;height:64px; clear: none;}
+/* comma */
+.flip-counter li.s{background-position:-53px -1030px;width:14px;height:103px; clear: none;}
+/* dot */
+.flip-counter li.dt{background-position:-67px -1030px;width:14px;height:103px; clear: none;}
+.clear{clear:both}
+
+
+
+.ui-page {
+		background: #fcfcfc;
+	}
+
+#wagefl {
+	display: inline;
+	padding: 0;
+	margin: 0;
+	clear:none;
+/*	border: 1px grey solid; */
+	position: relative;
+}
+
+
+#wrapper {
+	clear: none;
+	margin-top: -100px;
+	display: block;
+	/*  display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+
+	display: -moz-box;
+	-moz-box-orient: horizontal;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+
+	display: box;
+	box-orient: horizontal;
+	box-pack: center;
+	box-align: center; 
+	*/
+	/*	   border: 2px solid black;       */
+}
+   
+#signwrapper {
+	float:left;
+	padding: 0;
+	position: relative;
+	margin: 0;
+	height: 99px !important;
+	overflow: hidden;
+	clear: none;
+	margin-right: 7px;
+	margin-top: 0px;
+}
+
+.mask
+{
+    overflow: hidden;
+}
+
+.roundedCorners
+{
+    border-radius: 7px;
+	border: 1px solid white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.bigsign {
+	position: relative;
+	height: 62px;
+	padding: 0;
+	margin: 0 !important;
+	font-size: 54px; 
+	color: #f9f9f9; 
+	padding: 7px 11px 7px 10px ; 
+	background: #000;
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#0A284B), to(#135887)); */
+    background: -moz-linear-gradient(top, #444, #000);
+    background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#000)); -webkit-background-origin: padding-box; 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', end Colorstr='#000000',GradientType=0);
+/*	border: white solid 1px; */
+	border-radius: 5px;
+	clear: none;
+        overflow: hidden;
+}
+
+.signrotated{
+	-webkit-transform: scale(-1, 1) rotate(-180deg);
+	-moz-transform: scale(-1, 1) rotate(-180deg);
+	-ms-transform: scale(-1, 1) rotate(-180deg);
+	transform: scale(-1, 1) rotate(-180deg);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd), color-stop(0.5, #fff), color-stop(0.5, #fff)); 
+    background: -moz-linear-gradient(top, #dedede, #fff);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', end Colorstr='#ffffff',GradientType=0);        
+}

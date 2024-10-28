@@ -1,0 +1,12 @@
+<?xml version = "1.0" ?>
+  <Document>
+  <Connections>
+
+  </Connections>
+  <ContentType>URL</ContentType>
+  <DataSource>http&#x3A;&#x2F;&#x2F;www&#x2E;travelplanet&#x2E;nl&#x2F;</DataSource>
+  <Picture>http://192.168.1.1/kingsleys2.jpg</Picture>
+  <Location>httpwwwtravelplanetnl&#x2E;xdd</Location>
+  <Name>TravelPlanet&#x2E;NL, daar moet je geweest zijn</Name>
+  <TechnicalType>nl&#x2F;</TechnicalType>
+  </Document>

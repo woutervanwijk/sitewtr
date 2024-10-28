@@ -1,0 +1,106 @@
+<?xml version = "1.0" ?>
+<Project-list>
+  <Project>
+  <Connections>
+
+  <Connection>
+  <ContentType>URL</ContentType>
+  <Location>http://www.travelplanet.nl/</Location>
+  <Picture>http://www.travelplanet.nl/favicon.ico</Picture>
+  <Name>Travelplanet</Name>
+  </Connection>
+
+  <Connection>
+  <ContentType>URL</ContentType>
+  <Location>http://www.lonelyplanet.com/</Location>
+  <Picture>http://www.lonelyplanet.com/graffix/logo.gif</Picture>
+  <Name>Lonely Planet</Name>
+  </Connection>
+
+  <Connection>
+  <ContentType>URL</ContentType>
+  <Location>http://www.cia.gov/cia/publications/factbook/</Location>
+  <Name>World Factbook</Name>
+  <Picture>http://www.cia.gov/cia/publications/factbook/cialogo.gif</Picture>
+  </Connection>
+
+  <Connection>
+  <ContentType>URL</ContentType>
+  <Location>lastminute.pagina.nl</Location>
+  <Name>Lastminute.Pagina</Name>
+  <Picture>http://www.startpagina.nl/img/logo.gif</Picture>
+  </Connection>
+
+  <Connection>
+  <ContentType>URL</ContentType>
+  <Location>www.klm.nl</Location>
+  <Name>KLM</Name>
+  <Picture>http://www.klm.nl/images/home/zwaan100.gif</Picture>
+  </Connection>
+
+  <Connection>
+  <ContentType>URL</ContentType>
+  <Location>www.d-reizen.nl</Location>
+  <Picture>http://www.d-reizen.nl/frames/img/logo.gif</Picture>
+  <Name>D-Reizen</Name>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>Document</ContentType>
+  <Location>http://www.lonelyplanet.com/destinations/africa/togo/</Location>
+  <Picture>http://www.lonelyplanet.com/mapimages/africa/togo/map-thumb-togo.gif</Picture>
+  <Name>Togo</Name>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>Document</ContentType>
+  <Location>http://www.lonelyplanet.com/destinations/africa/burkina_faso/</Location>
+  <Picture>http://www.lonelyplanet.com/mapimages/africa/burkina_faso/map-thumb-burkina_faso.gif</Picture>
+  <Name>Burkina Faso</Name>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>Document</ContentType>
+  <Location>http://www.lonelyplanet.com/destinations/africa/ghana/</Location>
+  <Picture>http://www.lonelyplanet.com/mapimages/africa/ghana/map-thumb-ghana.gif</Picture>
+  <Name>Ghana</Name>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>Document</ContentType>
+  <Location>http://www.lonelyplanet.com/destinations/loc-afr.htm</Location>
+  <Picture>http://www.lonelyplanet.com/destinations/graphics/loc-afr.gif</Picture>
+  <Name>Africa</Name>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>Document</ContentType>
+  <Location>http://www.lonelyplanet.com/destinations/africa/benin/</Location>
+  <Picture>http://www.lonelyplanet.com/mapimages/africa/benin/map-thumb-benin.gif</Picture>
+  <Name>Benin</Name>
+  </Connection>
+
+  </Connections>
+  <ContentType>URL</ContentType>
+  <Creator></Creator>
+  <DataSource>Reizenxdp</DataSource>
+  <DataType></DataType>
+  <DateAccessed></DateAccessed>
+  <DateCreated></DateCreated>
+  <DateModified></DateModified>
+  <Location>projects&#x2F;reizen&#x2E;xdp</Location>
+  <LocationSecure></LocationSecure>
+  <Name>Reizen</Name>
+  <NetworkType></NetworkType>
+  <Password></Password>
+  <Picture></Picture>
+  <UserName></UserName>
+  <XDAVersion></XDAVersion>
+  </Project>
+
+</Project-list>

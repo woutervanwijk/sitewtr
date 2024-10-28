@@ -1,0 +1,365 @@
+<?xml version = "1.0" ?>
+<ControlsData-list>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>TextBox</ControlType>
+  <Color>000066</Color>
+  <BackColor>99CC00</BackColor>
+  <DependsOn>All</DependsOn>
+  <Description>Location!</Description>
+  <Parent>ControlsPanel</Parent>
+  <Height>20</Height>
+  <Left>6</Left>
+  <Location>huh</Location>
+  <Name>Textloc</Name>
+  <Top>80</Top>
+  <Width>350</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <BackColor>99CC00</BackColor>
+  <Align>Top</Align>
+  <ControlType>Panel</ControlType>
+  <LayOut>tile</LayOut>
+  <Height>105</Height>
+  <Left>0</Left>
+  <Name>ControlsPanel</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <BackColor>000066</BackColor>
+  <ControlType>Panel</ControlType>
+  <Height>30</Height>
+  <LayOut>tile</LayOut>
+  <Left>0</Left>
+  <Name>SubPanel</Name>
+  <Top>10</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Right</Align>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <MouseOverPicture>planet\planetlogomouseover.gif</MouseOverPicture>
+  <Picture>planet\planetlogo.gif</Picture>
+  <Height>80</Height>
+  <Parent>ControlsPanel</Parent>
+  <LayOut>pictureright</LayOut>
+  <Location>http://www.pi.net/</Location>
+  <Left>200</Left>
+  <Name>PiLogo</Name>
+  <Top>10</Top>
+  <Width>185</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Splitter</ControlType>
+  <Align>Top</Align>
+  <Height>3</Height>
+  <Left>0</Left>
+  <Color>2222AA</Color>
+  <Name>TopSplitter</Name>
+  <Top>100</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>sex!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>320</Left>
+  <Location>http://www.pi.net/sex/</Location>
+  <Picture>planet\sex.gif</Picture>
+  <MouseOverPicture>planet\sexmouseover.gif</MouseOverPicture>
+  <Name>sex</Name>
+  <Top>5</Top>
+  <Width>40</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>kids!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>280</Left>
+  <Location>http://www.pi.net/kids/</Location>
+  <Picture>planet\kids.gif</Picture>
+  <MouseOverPicture>planet\kidsmouseover.gif</MouseOverPicture>
+  <Name>kids</Name>
+  <Top>5</Top>
+  <Width>43</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>games!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>230</Left>
+  <Location>http://www.pi.net/game/</Location>
+  <Picture>planet\game.gif</Picture>
+  <MouseOverPicture>planet\gamemouseover.gif</MouseOverPicture>
+  <Name>game</Name>
+  <Top>5</Top>
+  <Width>51</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>discovery!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>150</Left>
+  <Location>http://www.pi.net/discovery/</Location>
+  <Picture>planet\discovery.gif</Picture>
+  <MouseOverPicture>planet\discoverymouseover.gif</MouseOverPicture>
+  <Name>Discovery</Name>
+  <Top>5</Top>
+  <Width>77</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>Computernieuws!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>70</Left>
+  <Location>http://www.pi.net/computer/</Location>
+  <Picture>planet\computer.gif</Picture>
+  <MouseOverPicture>planet\computermouseover.gif</MouseOverPicture>
+  <Name>computers</Name>
+  <Top>5</Top>
+  <Width>78</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>Business!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>5</Left>
+  <Location>http://www.pi.net/business/</Location>
+  <Picture>planet\business.gif</Picture>
+  <MouseOverPicture>planet\businessmouseover.gif</MouseOverPicture>
+  <Name>Business</Name>
+  <Top>5</Top>
+  <Width>66</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>HttpGet</Action>
+  <Color>ffffff</Color>
+  <BackColor>000066</BackColor>
+  <ControlType>TextBox</ControlType>
+  <Description>Zoeken met Planet!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>20</Height>
+  <Left>80%</Left>
+  <Location>http://zoek.planet.nl/cgi-bin/zoeken/zoekredir.cgi?q=</Location>
+  <Name>TextSearch</Name>
+  <Top>5</Top>
+  <Width>150</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>Back</Action>
+  <ControlType>Image</ControlType>
+  <Description>Back?!!</Description>
+  <Parent>ControlsPanel</Parent>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>65</Height>
+  <Left>10</Left>
+  <Location>Browser:Back</Location>
+  <Picture>planet\back.gif</Picture>
+  <MouseOverPicture>planet\backmouseover.gif</MouseOverPicture>
+  <Name>Back</Name>
+  <Top>10</Top>
+  <Width>65</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Action>Forward</Action>
+  <Description>Forward?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>65</Height>
+  <Left>75</Left>
+  <Location>Browser:Forward</Location>
+  <MouseOverPicture>planet\forwardmouseover.gif</MouseOverPicture>
+  <Picture>planet\forward.gif</Picture>
+  <Parent>ControlsPanel</Parent>
+  <Name>Forward</Name>
+  <Top>10</Top>
+  <Width>65</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>000066</Color>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>printpreview</Action>
+  <Description>Print</Description>
+  <Height>75</Height>
+  <Caption>Print Preview</Caption>  
+  <Left>500</Left>
+  <Location>print</Location>
+  <Picture>planet\printer.gif</Picture>
+  <MouseOverPicture>planet\printermouseover.gif</MouseOverPicture>
+  <LayOut>border</LayOut>
+  <Parent>ControlsPanel</Parent>
+  <Name>printpreview</Name>
+  <Top>3</Top>
+  <Width>85</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>000066</Color>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>print</Action>
+  <Description>Print</Description>
+  <Height>75</Height>
+  <Caption>Print</Caption>  
+  <Left>410</Left>
+  <Location>print</Location>
+  <Picture>planet\printer.gif</Picture>
+  <MouseOverPicture>planet\printermouseover.gif</MouseOverPicture>
+  <LayOut>border</LayOut>
+  <Parent>ControlsPanel</Parent>
+  <Name>print</Name>
+  <Top>3</Top>
+  <Width>85</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>000066</Color>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>go</Action>
+  <Description>Bookmarks</Description>
+  <Height>75</Height>
+  <Caption>Favorieten</Caption>  
+  <Left>320</Left>
+  <Location>%favoritesdir%</Location>
+  <Picture>planet\book.gif</Picture>
+  <MouseOverPicture>planet\bookmouseover.gif</MouseOverPicture>
+  <LayOut>border</LayOut>
+  <Parent>ControlsPanel</Parent>
+  <Name>Favorites</Name>
+  <Top>3</Top>
+  <Width>85</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>000066</Color>
+  <LayOut>border</LayOut>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>go</Action>
+  <Description>E-mail</Description>
+  <Height>75</Height>
+  <Caption>E-Mail</Caption>  
+  <Left>230</Left>
+  <Location>http://webmail.planet.nl/</Location>
+  <Picture>planet\email.gif</Picture>
+  <MouseOverPicture>planet\emailmouseover.gif</MouseOverPicture>
+  <Parent>ControlsPanel</Parent>
+  <Name>email</Name>
+  <Top>3</Top>
+  <Width>85</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Color>000066</Color>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <Action>go</Action>
+  <LayOut>border</LayOut>
+  <Description>De Planet Internet Startpagina</Description>
+  <Height>75</Height>
+  <Caption>Startpagina</Caption>  
+  <Left>141</Left>
+  <Location>http://www.planet.nl/</Location>
+  <Picture>planet\home.gif</Picture>
+  <MouseOverPicture>planet\homemouseover.gif</MouseOverPicture>
+  <Parent>ControlsPanel</Parent>
+  <Name>Home</Name>
+  <Top>3</Top>
+  <Width>85</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Color>000066</Color>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <Action>internetoptions</Action>
+  <Description>Internet Options?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>30</Height>
+  <Caption>Options</Caption>  
+  <Left>470</Left>
+  <Location>Browser:Options</Location>
+  <Parent>ControlsPanel</Parent>
+  <Name>Ioptions</Name>
+  <Top>70</Top>
+  <Width>60</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Color>000066</Color>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <Action>Refresh</Action>
+  <Description>Refresh?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>30</Height>
+  <Caption>Refresh</Caption>  
+  <Left>420</Left>
+  <Location>Browser:Refresh</Location>
+  <Parent>ControlsPanel</Parent>
+  <Name>Refresh</Name>
+  <Top>70</Top>
+  <Width>60</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>000066</Color>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>Stop</Action>
+  <Description>Stop?!!</Description>
+  <Height>30</Height>
+  <Caption>Stop</Caption>  
+  <Left>370</Left>
+  <Location>Browser:Stop</Location>
+  <Parent>ControlsPanel</Parent>
+  <Name>Stop</Name>
+  <Top>70</Top>
+  <Width>60</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>client</Align>
+  <ControlType>Project</ControlType>
+  <DependsOn>All Refresh Stop Forward Back Text Tabs2</DependsOn>
+  <Description>Click Here!!</Description>
+  <Left>0</Left>
+  <Location>controls/planetbrowser.xdc</Location>
+  <Name>ProjectViewer</Name>
+  <Top>0</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+</ControlsData-list>

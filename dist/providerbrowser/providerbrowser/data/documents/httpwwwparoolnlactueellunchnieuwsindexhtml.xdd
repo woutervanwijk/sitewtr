@@ -1,0 +1,11 @@
+<?xml version = "1.0" ?>
+  <Document>
+  <Connections>
+
+  </Connections>
+  <ContentType>URL</ContentType>
+  <DataSource>http&#x3A;&#x2F;&#x2F;www&#x2E;parool&#x2E;nl&#x2F;actueel&#x2F;lunchnieuws&#x2F;index&#x2E;html</DataSource>
+  <Location>httpwwwparoolnlactueellunchnieuwsindexhtml&#x2E;xdd</Location>
+  <Name>Lunchnieuws</Name>
+  <TechnicalType>html</TechnicalType>
+  </Document>

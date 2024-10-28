@@ -1,0 +1,11 @@
+<?xml version = "1.0" ?>
+  <Document>
+  <Connections>
+
+  </Connections>
+  <ContentType>URL</ContentType>
+  <DataSource>http&#x3A;&#x2F;&#x2F;www&#x2E;omroep&#x2E;nl&#x2F;</DataSource>
+  <Location>httpwwwomroepnl&#x2E;xdd</Location>
+  <Name>Omroep</Name>
+  <TechnicalType>nl&#x2F;</TechnicalType>
+  </Document>

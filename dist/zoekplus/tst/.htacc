@@ -1,0 +1,4 @@
+AuthUserFile "/home/www/zoek/tst/.htpasswd"
+AuthType Basic
+AuthName "Jaja het is wat"
+require valid-user

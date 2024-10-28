@@ -1,0 +1,11 @@
+<?xml version = "1.0" ?>
+  <Document>
+  <Connections>
+
+  </Connections>
+  <ContentType>URL</ContentType>
+  <DataSource>http&#x3A;&#x2F;&#x2F;teletekst&#x2E;nos&#x2E;nl&#x2F;cgi-bin&#x2F;tt&#x2F;nos&#x2F;page&#x2F;101</DataSource>
+  <Location>httpteletekstnosnlcgi-binttnoshtml101632&#x2E;xdd</Location>
+  <Name>Teletekst 101</Name>
+  <TechnicalType>nl&#x2F;cgi-bin&#x2F;tt&#x2F;nos&#x2F;html&#x2F;101&#x3F;632</TechnicalType>
+  </Document>

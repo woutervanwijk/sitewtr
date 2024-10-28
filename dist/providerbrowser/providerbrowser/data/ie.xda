@@ -1,0 +1,186 @@
+<?xml version = "1.0" ?>
+
+<ControlsData-list>
+
+  <ControlsData>
+  <ControlType>mainmenu</ControlType>
+  <Name>Window</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>mainmenu</ControlType>
+  <Name>Edit</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>mainmenu</ControlType>
+  <Name>Help</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menuitem</ControlType>
+  <Action>Refresh</Action>
+  <Name>Refresh</Name>
+  <Parent>Window</Parent>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menuitem</ControlType>
+  <Parent>Edit</Parent>
+  <Action>internetoptions</Action>
+  <Name>Options</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menuitem</ControlType>
+  <Parent>Window</Parent>
+  <Action>closewindow</Action>
+  <Name>Close Window</Name>
+  </ControlsData>
+
+
+
+  <ControlsData>
+  <Align>Top</Align>
+  <Picture>textures\abrasivepaper.bmp</Picture>
+  <BackColor>dddddd</BackColor>
+  <ControlType>Panel</ControlType>
+  <Height>73</Height>
+  <LayOut>PictureLeft</LayOut>
+  <Left>0</Left>
+  <Name>ControlsPanel</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <Picture>textures\abrasivepaper.bmp</Picture>
+  <BackColor>dddddd</BackColor>
+  <ControlType>Panel</ControlType>
+  <Height>73</Height>
+  <LayOut>PictureLeft</LayOut>
+  <Left>0</Left>
+  <Name>ControlsPanel</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Action>Forward</Action>
+  <Description>Forward?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>50</Height>
+  <Caption>Forward</Caption>  
+  <Left>51</Left>
+  <Location>Browser:Forward</Location>
+  <LayOut>border</LayOut>
+  <Picture>\ie\ieforwardgray.bmp</Picture>
+  <MouseOverPicture>\ie\ieforward.bmp</MouseOverPicture>
+  <DownPicture>\ie\ieforward.bmp</DownPicture>
+  <Parent>ControlsPanel</Parent>
+  <Name>Forward</Name>
+  <Top>1</Top>
+  <Width>53</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Action>Refresh</Action>
+  <Description>Refresh?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <LayOut>border</LayOut>
+  <Height>50</Height>
+  <Caption>Refresh</Caption>  
+  <Left>151</Left>
+  <Location>Browser:Refresh</Location>
+  <Picture>\ie\ierefreshgray.bmp</Picture>
+  <MouseOverPicture>\ie\ierefresh.bmp</MouseOverPicture>
+  <DownPicture>\ie\ierefresh.bmp</DownPicture>
+  <Parent>ControlsPanel</Parent>
+  <Name>Refresh</Name>
+  <Top>1</Top>
+  <Width>53</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Action>Stop</Action>
+  <LayOut>border</LayOut>
+  <Description>Stop?!!</Description>
+  <Height>50</Height>
+  <Caption>Stop</Caption>  
+  <Left>101</Left>
+  <Location>Browser:Stop</Location>
+  <Picture>\ie\iestopgray.bmp</Picture>
+  <MouseOverPicture>\ie\iestop.bmp</MouseOverPicture>
+  <DownPicture>\ie\iestop.bmp</DownPicture>
+  <Parent>ControlsPanel</Parent>
+  <Name>Stop</Name>
+  <Top>1</Top>
+  <Width>53</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>Back</Action>
+  <ControlType>Image</ControlType>
+  <Description>Back?!!</Description>
+  <Parent>ControlsPanel</Parent>
+  <Caption>Back</Caption>  
+  <LayOut>border</LayOut>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>50</Height>
+  <Left>1</Left>
+  <Location>Browser:Back</Location>
+  <Picture>\ie\iebackgray.bmp</Picture>
+  <MouseOverPicture>\ie\ieback.bmp</MouseOverPicture>
+  <DownPicture>\ie\ieback.bmp</DownPicture>
+  <Name>Back</Name>
+  <Top>1</Top>
+  <Width>53</Width>
+  </ControlsData>
+
+
+  <ControlsData>
+  <Action>go</Action>
+  <Align>Bottom</Align>
+  <ControlType>TextBox</ControlType>
+  <DependsOn>all ProjectViewer TabBar</DependsOn>
+  <Description>Location!</Description>
+  <Parent>ControlsPanel</Parent>
+  <Height>20</Height>
+  <Left>0</Left>
+  <Location>huh</Location>
+  <Name>Text</Name>
+  <Top>51</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Bottom</Align>
+  <Action>setproject</Action>
+  <ControlType>TabBar</ControlType>
+  <DependsOn>Stop Text Tabs2</DependsOn>
+  <Height>23</Height>
+  <Description>Click Here!!</Description>
+  <Left>0</Left>
+  <Location>A</Location>
+  <Name>Tabs2</Name>
+  <Top>100%</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Client</Align>
+  <ControlType>Project</ControlType>
+  <DependsOn>All Stop Forward Back Text Tabs2</DependsOn>
+  <Description>Click Here!!</Description>
+  <Left>0</Left>
+  <Location>controls/dvmbrowser.xdc</Location>
+  <Name>ProjectViewer</Name>
+  <Top>0</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+</ControlsData-list>

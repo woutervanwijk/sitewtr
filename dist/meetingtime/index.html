@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" /> 
+
+<!-- proble <meta name = "viewport" content = "width=device-width, initial-scale = 1.0, user-scalable = no"> -->
+<meta name = "viewport" content = "width=device-width, user-scalable = no">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta content="true" name="MSSmartTagsPreventParsing" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="copyright" content="(c) 2011 Wouter van Wijk" />
+
+<link rel="apple-touch-icon" href="img/add48.png" />
+
+<link rel="apple-touch-icon" sizes="128x128"  href="img/add128.png" />
+
+<title>Meeting Time</title>
+	<script>
+// function BlockMove(event) {
+  // Tell Safari not to move the window.
+//		if ((window.innerWidth < 400))
+//	{ event.preventDefault() ;}
+ //}
+</script>
+
+<link rel="stylesheet" href="jquery.mobile-1.0.min.css" />
+<script src="jquery-1.6.4.min.js"></script>
+
+
+<script type='text/javascript' src='jquery.cookie.js'></script>
+<script type="text/javascript" src="count.js"></script>
+
+	
+	<script>
+	$(document).bind("mobileinit", function(){
+		//ios5
+		// problems		 $.mobile.touchOverflowEnabled = true;
+		$.mobile.fixedToolbars.setTouchToggleEnabled(false);
+		$.mobile.defaultPageTransition = 'none';
+		$.mobile.defaultDialogTransition = 'none';
+		$.mobile.useFastClick = true;
+	});
+	</script>
+	
+<script src="jquery.mobile-1.0.min.js"></script>
+	
+
+	<!-- My flip counter script, REQUIRED -->
+	<script type="text/javascript" src="js/flipcounter.js"></script>
+	<!-- Style sheet for the counter, REQUIRED -->
+<!--		<link rel="stylesheet" type="text/css" href="css/counter.css" /> -->
+	<link rel="stylesheet" type="text/css" href="meeting.css" />
+	
+</head>
+
+<body ontouchmove="BlockMove(event);" >
+
+		<div data-role="page" class="ui-page-active" id="home">
+			<div class="ui-bar ui-bar-b nofullscreen onlyflip" style="text-align:center">
+				<h3>Meeting Time &alpha;</h3>
+			</div>
+
+			<div data-role="content">
+						
+
+				<div id="fullscreen">
+					<div id="wrapper">
+						<div id="signwrapper"><div class="mask roundedCorners"><div class="sign bigsign"> </div></div><div class="mask roundedCorners"><div class="signrotated sign bigsign"> </div></div></div>
+						<span id="wagefl" name="wagefl" class="flip-counter"></span>
+					</div>
+					<div class="ui-grid-a onlyflip" id="timegrid">
+						<div class="ui-block-a"><div class="ui-bar ui-bar-d">Current Time</div></div>
+						<div class="ui-block-b"><div id="time" class="ui-bar ui-bar-c">&nbsp;</div></div>
+						<div class="ui-block-a"><div class="ui-bar ui-bar-d">Time Started</div></div>
+						<div class="ui-block-b"><div id="timestarted" class="ui-bar ui-bar-c">0:00:00</div></div>
+						<div class="ui-block-a"><div class="ui-bar ui-bar-d">Time Elapsed</div></div>
+						<div class="ui-block-b"><div id="timeelapsed" class="ui-bar ui-bar-c">0:00</div></div>
+						<br/>
+					</div>						
+
+					<p id="pcosts" class="onlyflip">
+						This meeting costs <span class="sign"> </span> <span id="txtrate">250</span> per hour (one <span class="sign"> </span> in about <span id="txtburn">0</span> seconds).
+					</p>
+				</div> <!-- fullscreen -->
+
+				<div  id="divbt" class="ui-grid-a  onlyflip nofullscreen">
+					<div class="ui-block-a">
+						<a onclick="pause(); return false" id="pausebt" href="#" data-role="button" data-iconpos="right" data-icon="check" data-iconpos="right">Go</a>
+					</div>
+					<div class="ui-block-b">
+						<a onclick="reset(); return false" id="resetbt" href="#" data-role="button" data-theme="e" data-icon="refresh" data-iconpos="right">Reset</a>
+					</div>
+				</div>
+			</div> <!-- content -->
+<!--				<div>
+					<a data-transition="none" data-role="button" data-theme="b" id="stopbt" href="#settings" data-icon="gear" data-iconpos="right">Settings</a>
+				</div>  -->
+
+			<div data-role="footer" class="nofullscreen  onlyflip" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" class="ui-btn-active ui-state-persist" data-iconpos="top" data-icon="grid">Counter</a></li>
+						<li><a href="#settings" data-icon="gear" data-iconpos="top">Settings</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+
+		</div> <!-- page -->
+
+		<div data-role="page" id="settings">
+			<div  data-role="header" data-position="inline" class="ui-bar-b">
+				<h3>Settings</h3>	
+				<a id="aboutbt" data-transition="none" data-rel="dialog" href="#welcome" data-role="button" data-icon="info" class="ui-btn-right" data-iconpos="notext"></a>  
+			</div>
+			<div data-role="content">
+
+					<label for="peoplesl">Number of people:</label>
+					<input type="range" name="peoplesl" onchange="changerate(); savesliders(); return false" id="peoplesl" value="10" min="0" max="50"  />
+					<br/>
+					<label for="wagesl">Average wage per hour:</label>
+					<input type="range" name="wagesl" onchange="changerate(); savesliders(); return false" id="wagesl" value="25" min="0" max="250" />
+					<hr/>
+					
+					<label for="ratesl"><span class="sign"> </span> per hour:</label>
+					<input type="range" name="ratesl" id="ratesl" onchange="savesliders(); return false" value="250" min="0" max="12500" />
+					<br/>
+					<label for="selsign" class="select">Currency</label>
+					<select name="selsign" id="selsign"  onchange="changesign(); savesliders(); return false">
+					   <option value="&dollar;">&dollar; (Dollar)</option>
+					   <option value="&euro;">&euro; (Euro)</option>
+					   <option value="&pound;">&pound; (Pound)</option>
+					   <option value="&#8377;">&#8377; (Rupee)</option>
+					</select>
+					<br/>
+			</div> <!-- content -->
+			
+			<div data-role="footer" data-position="fixed" >
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-iconpos="top" data-icon="grid">Counter</a></li>
+						<li><a href="#settings"  class="ui-btn-active ui-state-persist" data-icon="gear" data-iconpos="top">Settings</a></li>
+					</ul>
+				</div> <!-- /navbar -->
+			</div> <!-- /footer -->
+		</div> <!-- settings page -->
+
+		<div data-role="page" id="welcome">
+			<div data-role="header" data-position="inline"  class="ui-bar-b">
+				<h1>About</h1>
+			</div>
+
+			<div data-role="content" >
+				<h2>Meeting Time</h2>
+			
+				<h4>Count the costs of a meeting.</h4>
+
+				<p>Usage is easy: use the 'Settings' button to set the hourly costs of your meeting. Return to the counter and press Go!</p>
+				
+				<a href="#"data-role="button" data-rel="back">Ok</a>  
+				<br/>
+				<h4 style="text-align:center;">&copy; 2012 Woutr</h4>
+			</div>
+		</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl"><head>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta content="true" name="MSSmartTagsPreventParsing" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="description=" content="Met Zoek+ vind je meer! Zoek eenvoudig in verschillende zoekmachines en met handige zoektrucs." />
+<meta name="keywords" content="zoeken, eenvoudig, verschillende, zoekmachines, zoektrucs, trucs, zoekplus, zoek, zoek menu" />
+<meta name="revisit-after" content="7 days" />
+<meta name="copyright" content="(c) 2010 Wouter van Wijk" />
+<meta name="author" content="Wouter van Wijk" />
+
+<link href="favicon.ico" rel="shortcut icon" />
+<link href="favicon.ico" rel="icon" />
+	<link rel='stylesheet' type='text/css' href='css/style.css' />
+   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script type='text/javascript' src='js/infogrid.js'></script>   
+<script type='text/javascript' src='jquery.historycookie.js'></script>
+ <link rel="stylesheet" href="zoek.css" type="text/css" media="screen" />
+
+ <script type="text/javascript" src="zoek.js"></script> 
+
+<title>Zoek+</title>
+
+	
+ 
+</head>
+
+<body>
+
+<h1><!-- <img src="img/zplogo.png" alt="Zoek+ Logo" title="Zoek+ Logo" /><br/>-->Zoek<sup>+</sup></h1>
+
+	
+	<div id="page-wrap">
+		
+		
+        <div class="info-col">
+        
+        	<h2>Media</h2>
+        	
+        	
+        	<dl>
+        	  <dt>Video &amp; TV</dt>
+        	  <dd>You<br/>TV-Gids</dd>
+        	  <dt>Afbeeldingen</dt>
+        	  <dd>GGL<br/>Picasa<br/>Flickr<br/>Rechtenvrij</dd>
+        	  <dt>Film</dt>
+        	  <dd>Moviemeter<br/>Acteurs &amp; Regisseurs<br/>Imdb<br/>Cinema<br/></dd>
+        	  <dt>Muziek</dt>
+        	  <dd>Last.fm<br/>Skreemr<br/>Artiesten</dd>
+        	</dl>
+        
+        </div>
+		
+		<div class="info-col">
+		
+    		<h2>Contact</h2>
+    		
+<!--            <a class="image aquaman" href="http://www.deviantart.com/print/8342014/">View Image</a> -->
+    		
+    		<dl>
+    		  <dt>Mensen</dt>
+    		  <dd>
+				<a href="#" name="wieowie">In meerdere bronnen(WieoWie)</a><br/>
+				<a href="#" name="pipl">In meerdere bronnen (Pipl)</a> <br/>
+				<a href="#" name="mensnieuws">Mens in het nieuws</a>  <br/>
+				<a href="#" name="gezicht">Op gezicht</a>  <br/>
+			  </dd>
+    		  <dt>Internet</dt>
+    		  <dd>
+				<a href="#" name="username">Op internet gebruikersnaam</a> <br/>
+				<a href="#" name="email">Op mailadres</a> <br/>
+				<a href="#" name="naam">Op (deel van) naam</a> <br/>
+			  </dd>
+    		  <dt>Telefoon</dt>
+    		  <dd>TBoek<br/>Zoek op nummer</dd>
+    		  <dt>Adres, Post</dt>
+    		  <dd>Tboek<br/>Op kaart<br/>Postcode<br/>Antwoordnummer</dd>
+    		  <dt>Route</dt>
+    		  <dd>Auto (tomtom of maps)<br/>Fiets<br/>OV9292<br/></dd>
+
+		</div>
+		
+		<div class="info-col">
+		
+    		<h2>Algemeen</h2>
+    		<dl>
+    		  <dt id="starter">Zoekmachines</dt>
+				<dd>
+					<a href="#" name="google">Met Google</a><br/>
+					<a href="#" name="ixquick">Met Privacy (In meerdere machines tegelijk)</a><br/>
+					<a href="#" name="bing">Met Bing</a><br/>
+					<a href="#" name="yahoo">Met Yahoo</a><br/>
+				</dd>
+    		  <dt>Opties</dt>
+				<dd>
+					<a href="#" name="exact">Met exacte woordcombinatie</a><br/>
+					<!-- <a href="#" name="opdatum">Op datum</a> -->
+					<a href="#" name="eenvan">Een van de woorden (OR)</a><br/>
+					<a href="#" name="pdf">In Publicaties [PDF]</a><br/>
+					<a href="#" name="doc">In Documenten [Word]</a><br/>
+					<a href="#" name="xls">In Spreadsheets [Excel]</a><br/>
+					<a href="#" name="ppt">In Presentaties [Powerpoint]</a><br/>
+				</dd>
+    		  <dt>Encyclopedie</dt>
+			  <dd>
+				<a href="#" name="wikinl">In Wikipedia [NL]</a><br/>
+				<a href="#" name="wolfram">Termen in Wolfram Alpha [EN]</a><br/>
+			  </dd>
+    		  <dt>Site details</dt>
+			  <dd>
+				<a href="#" name="binnensite">Zoek binnen een site</a><br/>
+				<a href="#" name="translpage">Vertaal webpagina</a><br/>
+				<a href="#" name="related">Vergelijkbare pagina's</a><br/>
+				<a href="#" name="linkto">Verwijzende pagina's</a><br/>
+				<a href="#" name="internetarchive">Oude versie van een site</a><br/>
+				<a href="#" name="domain">Gegevens domein</a><br/>
+				<a href="#" name="detailsdomain">Details domein</a><br/>
+				<a href="#" name="ip">Gegevens IP-adres</a><br/>
+			  </dd>
+		</div>
+		
+		<div class="info-col">
+		
+    		<h2>Geschreven</h2>
+    		    		
+    		<dl>
+    		  <dt>Nieuws</dt>
+    		  <dd>Ggl nws<br/>Topix<br/>Mensen in het nieuws<br/>Persberichten</dd>
+    		  <dt>Twitter</dt>
+    		  <dd>Topics @<br/>Tweets<br/>Gebruikers<br/></dd>
+    		  <dt>Blogs &amp; Fora</dt>
+    		  <dd>Blogpostings<br/>Discussiegroepen</dd>
+    		  <dt>Taal</dt>
+    		  <dd>Van Dale<br/>Synoniemen</dd>
+    		  <dt>Vertalen</dt>
+    		  <dd>GGL<br/>Babylon<br/></dd>
+    		</dl>
+		
+		</div>
+
+        <div class="info-col">
+        
+        	<h2>Producten</h2>
+        	
+        	
+        	<dl>
+        	  <dt>Recensies</dt>
+        	  <dd>Kiesk<br/>Ciao<br/>Trusted</dd>
+        	  <dt>Markten</dt>
+        	  <dd>Marktpl<br/>Speurders<br/>Ebay<br/></dd>
+        	  <dt>Winkels</dt>
+        	  <dd>Wehkamp<br/>V&amp;D<br/></dd>
+        	  <dt>Media</dt>
+        	  <dd>Muziekwinkel<br/>Filmwinkel<br/></dd>
+        	</dl>
+        
+        </div>
+	
+	
+	</div>
+	
+ <h2  align="left"><a href="http://" target="_blank" id="searchurl"><span id="logo"><img id="image" src="" alt="Logo" /></span><span id="searchtitle">&nbsp;</span></a></h2>	
+<p id="descr" class="nobar">&nbsp;</p>
+
+	<div id="htmldiv" align="left">&nbsp;
+	</div>
+  
+	<div id="formdiv" align="left">
+<!--	<form target="trg" name="zoekform" id="zoekform" onsubmit="return setBar(true);" action="" method="">  -->
+	<form name="zoekform" id="zoekform" onsubmit="return subm();" action="" method="get">  
+		<p id="text1descr" >&nbsp;</p>
+		<input name="q" type="text" id="text1" size="45" onfocus="this.select()" />
+		<div style="display:none;" id="spantext2">
+		<p id="text2descr" > &nbsp;</p>
+		<input type="text" size="45" id="text2" onfocus="this.select()" /></div>
+		<input type="hidden" id="hidden1" />
+		<input type="hidden" id="hidden2" />
+		<input type="hidden" id="hidden3" />
+		<input type="hidden" id="hidden4" />
+		<input id="submit" value="Zoek" type="submit" /><br />
+	</form>
+	</div>
+
+</div>
+<div id="statusbar" align="left">&nbsp;</div>
+
+
+</div>
+
+</body>
+
+</html>

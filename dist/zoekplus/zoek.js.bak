@@ -1,0 +1,430 @@
+//wvw
+// I discovered jQuery when the programming was half done, so I mixed it up a bit...
+
+var barStatus = 0;
+var text1var = '';
+var text2var = '';
+
+ $(document).ready(function(){	
+	mainmenu();
+text1.select()
+text1.focus()
+
+//$('#righttop2').corner();
+
+//preload
+image1 = new Image();
+image1.src = "img/blank.gif";
+createArray();
+//add clicks to all menu-items (all a's with a name)
+ $("a[name]").click( function() { return changeArr(this) }).mouseover( function() { return showDescr(this) } ).mouseout(function() { return hideDescr(this) } );
+
+
+//fill form
+$("a[name$='google']").click();
+
+	
+				
+	//CLOSING POPUP
+	//Click the x event!
+	$("#popupContactClose").click(function(){
+		disablePopup();
+	});
+	//Click out event!
+	$("#backgroundPopup").click(function(){
+		disablePopup();
+	});
+	//Press Escape event!
+	$(document).keypress(function(e){
+		if(e.keyCode==27 && popupStatus==1){
+			disablePopup();
+		}
+	});
+});
+
+function showDescr(elem) {
+	if (barStatus == 0) {
+		$("#statusbar").show().html(getDescr(elem.name));
+//		$("#statusbar").html(getDescr(elem.name));
+	}
+}
+
+function hideDescr() {
+//	$("#statusbar").html('');
+	$("#statusbar").hide();
+	barStatus = 0;
+}
+
+function getDescr(elname) {
+  if (a[elname][0] == '') {
+		return (a[elname][4]);		
+	} else {
+		return (a[elname][13]);		
+	}
+}
+
+function mainmenu(){
+$(" #nav ul ").css({display: "none"}); // Opera Fix
+$(" #nav li").hover(function(){
+		$(this).find('ul:first').css({visibility: "visible",display: "none"}).show(100);
+		},function(){
+		$(this).find('ul:first').css({visibility: "hidden"});
+		});
+}
+
+
+function findNextNode(root, nodeType) {
+	var e = root;
+	do {
+		e = e.nextSibling;
+	} while(e && e.nodeType != nodeType);
+	return(e);
+}
+
+function findA (root) {
+	var e = root;
+	do {
+		e = e.nextSibling;
+		alert(e.type);
+	} while(e && e.type != 'a');
+	return(e);
+}
+
+/*wvw*/
+function makelower(title) {
+var tmpChar = title.substring(0,1).toLowerCase();
+return ('Zoek ' + tmpChar + title.substring(1,title.length));
+}
+
+
+function subm()
+{
+//not working perfectly, only in FF
+	var form = document.getElementById("zoekform")
+	var text1 = document.getElementById("text1")
+	var text2 = document.getElementById("text2")
+	if (form.method == '') {
+// <!--  onsubmit="location.href='http://www.hyves.nl/search/?#'+$F('searchhyver')+'/'; return false;" -->
+		url = form.action + text1.name + '='+ text1.value + '&' + text2.name + '='+ text2.value
+//		form.action=url
+//		form.action=''
+//		form.method='GET'
+//		form.method=''
+//		alert(url + ' - ' + window.location)
+//		document.location = url
+		window.document.location.href = url
+//		return true;
+	} else {
+		return true;
+	}
+}
+
+function changeimg(url, descr) {
+var image = document.getElementById("image")
+
+ if (url != '') {
+//  h = image.height;
+//  w = image.width;
+  image.src = 'img/blank.gif';
+//  image.height = h;
+//  image.width = w;
+  
+  
+  //preload
+  image1 = new Image();
+  image1.src = 'img/' + url;
+  
+  image.src = 'img/' + url ;
+  image.alt = descr;
+  image.title = descr;
+  } else {
+	image.src = 'img/blank.gif';
+  }
+}
+
+function changeHtml(html, sitename, siteurl, descr, siteimage) {
+var formdiv = document.getElementById("formdiv")
+var htmldiv = document.getElementById("htmldiv")
+
+var searchurl = document.getElementById("searchurl")
+searchurl.href = siteurl
+
+var searchtitle = document.getElementById("searchtitle")
+searchtitle.firstChild.nodeValue = sitename
+
+var description = document.getElementById("descr")
+description.firstChild.nodeValue = descr
+
+changeimg(siteimage, makelower(sitename));
+
+formdiv.style.display= 'none'
+htmldiv.style.display= 'block'
+
+htmldiv.innerHTML = html;
+
+
+
+$("#text1h").focus().select();
+
+}
+
+function changeArr(elem) {
+ var arr = a[elem.name];
+  var htmlIsHidden =  $("#htmldiv").is(':hidden');
+  var formIsHidden =  $("#formdiv").is(':hidden');
+  var text1 = $("#text1").val();
+  var text2 = $("#text2").val();
+  var text1h = $("#text1h").val();
+  var text2h = $("#text2h").val();
+
+  if (arr[0] == '') {
+  	changeHtml(arr[1], elem.firstChild.nodeValue, arr[3], arr[4], arr[5]);
+  } else {
+	changeForm(elem.firstChild.nodeValue, arr[0], arr[1], arr[2], arr[3], arr[4], arr[5], arr[6], arr[7], arr[8], arr[9], arr[10], arr[11], arr[12], arr[13], arr[14]);
+  }
+
+//for htmldiv is shown, but wasn't shown before
+ if(htmlIsHidden && $("#htmldiv").is(':visible')) {
+	if($("#text1h").length) {
+		$("#text1h").val(text1).focus().select();
+	}
+	if($("#text2h").length) {
+		$("#text2h").val(text2);
+	}
+ }
+
+//for htmldiv is shown, and was shown before
+ if(!htmlIsHidden && $("#htmldiv").is(':visible')) {
+	if($("#text1h").length) {
+		$("#text1h").val(text1h).focus().select();
+	}
+	if($("#text2h").length) {
+		$("#text2h").val(text2h);
+	}
+ }
+
+//for form is shown, but wasn't shown before
+ if(formIsHidden && $("#formdiv").is(':visible')) {
+	$("#text1").val(text1h).focus().select();
+	$("#text2").val(text2h);
+ }
+
+ 
+ //hide menu
+ $(" #nav ul ").css({display: "none"}); // Opera Fix
+  
+  return true;
+}
+
+function changeForm(sitename, action, textbox1name, textbox2name, hidden1name, hidden1value, hidden2name, hidden2value, submitname, method, siteurl, siteimage, textbox1descr, textbox2descr, descr) {
+
+//createCookies(sitename, action, textbox1name, textbox2name, hidden1name, hidden1value, hidden2name, hidden2value, submitname, method, siteurl, siteimage, textbox1descr, textbox2descr, descr)
+
+
+var formdiv = document.getElementById("formdiv")
+var htmldiv = document.getElementById("htmldiv")
+var text1 = document.getElementById("text1")
+var text2 = document.getElementById("text2")
+var submitbt = document.getElementById("submit")
+var form = document.getElementById("zoekform")
+var text1description = document.getElementById("text1descr")
+var text2description = document.getElementById("text2descr")
+text1.name = textbox1name
+text2.name = textbox2name
+if (textbox2name == '') {
+	text2.style.display= 'none';
+	text2description.style.display = 'none';
+} else {
+	text2.style.display= 'block';
+	text2description.style.display = 'block';
+}
+//text1.value=""
+submitbt.name = submitname
+ form.action=action
+
+ form.method=method
+
+var hidden1 = document.getElementById("hidden1")
+var hidden2 = document.getElementById("hidden2")
+var hidden3 = document.getElementById("hidden3")
+var hidden4 = document.getElementById("hidden4")
+hidden1.value= hidden1value
+hidden2.value= hidden2value
+hidden1.name= hidden1name
+hidden2.name= hidden2name
+
+var searchurl = document.getElementById("searchurl")
+searchurl.href = siteurl
+var searchtitle = document.getElementById("searchtitle")
+searchtitle.firstChild.nodeValue = makelower(sitename);
+
+
+var description = document.getElementById("descr")
+description.firstChild.nodeValue = descr
+
+//create child if it doesnt exist. not needed for others.  if ( textbox2descr == '' ) { textbox2descr = '&nbsp;'} 
+if (!text2description.firstChild) { text2description.createChild }
+text2description.firstChild.nodeValue = textbox2descr + ':';
+text1description.firstChild.nodeValue = textbox1descr + ':';
+
+formdiv.style.display= 'block'
+htmldiv.style.display= 'none'
+
+changeimg(siteimage, makelower(sitename))
+
+text1.focus()
+text1.select()
+
+}
+
+function setHomePage()
+{
+
+	if(navigator.appName == "Microsoft Internet Explorer")
+	{
+	   document.body.style.behavior='url(#default#homepage)';
+   	   document.body.setHomePage(window.location.href);
+
+	} else {
+		//centering with css
+//		centerPopup();
+		//load popup
+//		loadPopup();
+window.open("sethome.html");
+		return true;	   
+	}
+
+}
+
+
+
+function createArray() {
+
+a = new Array();
+//a['google'] = new Array('', '<form action="http://www.google.nl/cse" id="cse-search-box"><div><input type="hidden" name="cx" value="partner-pub-5457839548366721:bnyj78-tfez" /><input type="hidden" name="ie" value="ISO-8859-1" /><input type="text" name="q" size="31" id="text1" /><input type="submit" name="sa" value="Zoeken" /></div></form><script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=nl"></script>', 'Google', 'http://www.google.nl', 'Doorzoek het internet met Google.', 'google.gif' );
+
+a['google'] = new Array('http://www.google.nl/search', 'q', '', 'hl', 'nl', '', '', 'btnG', 'GET', 'http://www.google.com/', 'google.gif', 'Vul zoekwoord(en) in', '', 'Doorzoek het internet met Google. Tip: gebruik meerdere zoekwoorden om een beter resultaat te krijgen.');
+a['exact'] = new Array('http://www.google.nl/search', 'as_epq', '', '', '', '', '', '', 'GET', 'http://www.google.nl', 'google.gif', 'Exacte woordcombinatie', '', 'Zoek op exacte combinatie en volgorde van woorden. Bijvoorbeeld: koninklijk huis. U vindt dan alle pagina\'s met "koninklijk huis", maar niet de pagina\'s waarin met alleen koninklijk, of alleen huis voorkomen.', 'Met exacte woordcombinatie');
+a['site'] = new Array('http://www.google.nl/search', 'q', 'as_sitesearch', 'hl', 'nl', '', '', 'btnG', 'GET', 'http://www.google.com/', 'google.gif', 'Zoekwoord(en)', 'Webadres van site', 'Doorzoek een specifieke site met Google. Bijvoorbeeld: "Utrecht" op "ad.nl". U vindt dan alleen de artikelen op de site van het AD waarin Utrecht vermeld staat.', 'Binnen een bepaalde site');
+a['oneof'] = new Array('http://www.google.nl/search', 'as_oq', '', '', '', '', '', '', 'GET', 'http://www.google.nl', 'google.gif', 'Een van de woorden', '', 'Zoek met \'of\' . Normaal gesproken krijgt u alleen resultaten waarin alle ingevoerde woorden voorkomen, maar hiermee niet. Als u bijvoorbeeld "dit dat" invult, krijgt u dus alle pagina\'s waarin "dit" voorkomt, en alle pagina\'s waarin "dat" voorkomt.', 'Een van de woorden (OR)');
+a['pdf'] = new Array('http://www.google.nl/search', 'q', '', 'hl', 'nl', 'as_filetype', 'pdf', 'btnG', 'GET', 'http://www.google.com/', 'google.gif', 'Vul zoekwoord(en) in', '', 'Doorzoek documenten in het PDF bestandsformaat met Google. Vaak worden meer offici&euml;le publicaties in PDF-vorm gepubliceerd.', 'In PDF documenten');
+a['doc'] = new Array('http://www.google.nl/search', 'q', '', 'hl', 'nl', 'as_filetype', 'doc', 'btnG', 'GET', 'http://www.google.com/', 'google.gif', 'Vul zoekwoord(en) in', '', 'Doorzoek documenten in het Word bestandsformaat met Google.  Vaak worden meer officiele publicaties in Word-vorm gepubliceerd, ook kunnen ze verborgen informatie bevatten.', 'In Word documenten');
+a['xls'] = new Array('http://www.google.nl/search', 'q', '', 'hl', 'nl', 'as_filetype', 'xls', 'btnG', 'GET', 'http://www.google.com/', 'google.gif', 'Vul zoekwoord(en) in', '', 'Doorzoek spreadsheets in het Excel bestandsformaat met Google. Excel spreadsheets zijn een interessante bron voor een zoektocht naar cijfers en berekeningen.', 'In Excel documenten');
+a['ppt'] = new Array('http://www.google.nl/search', 'q', '', 'hl', 'nl', 'as_filetype', 'ppt', 'btnG', 'GET', 'http://www.google.com/', 'google.gif', 'Vul zoekwoord(en) in', '', 'Doorzoek Powerpoint presentaties met Google. Presentaties in Powerpoint bevatten vaak samenvattingen en globale informatie.', 'In Powerpoint documenten');
+a['bedrijven'] = new Array('http://www.ilocal.nl/WebSearchServlet', 'iqk1', 'iqk3', 'tid', 'NewSearch', 'iqk2', 'not member', '', 'GET', 'http://www.ilocal.nl', 'ilocal.gif', 'Bedrijfsnaam of type (b.v. Slager)', 'Plaatsnaam of postcode', 'Zoek een bedrijf via ilocal.nl. U kunt zoeken op bedrijfsnaam (Philips) of bedrijfstype (b.v. Bakker of Slager).', 'Bedrijven');
+a['naam'] = new Array('http://www.gevonden.cc/naam.php', 'lastname', 'townname_i', '', '', '', '', '', 'POST', 'http://www.gevonden.cc/', 'gevonden.png', 'Naam', 'Stad', 'Zoek een telefoonnummer en adres via Gevonden.cc. Vul daarvoor een naam en een woonplaats in.', 'Op naam');
+a['tel'] = new Array('http://www.gevonden.cc/telefoonnummer.php', 'phonenumber', '', '', '', '', '', '', 'POST', 'http://www.gevonden.cc', 'gevonden.png', 'Telefoonnummer', '', 'Zoek een naam en adres bij een telefoonnummer via Gevonden.cc. Vul een telefoonnummer in. Als het nummer bekend is, krijgt u een naam en eventueel een adres.', 'Op telefoonnummer'); 
+//a['domain'] = new Array('http://www.domaintools.com/go/', 'q', '', 'service', 'whois', '', '', '', 'GET', 'http://www.domaintools.com/', 'domaintools.png', 'Domeinnaam', '', 'Vind de gegevens van een domeinnaam. Vul een (deel van) domeinnaam in je wilt opzoeken via domaintools.', 'Gegevens bij domeinnaam');
+a['gratistel'] = new Array('http://www.antwoordnummer.nl/zoeken.php', 'zoek', '', 'zoeken', 'telefoonnummer', '', '', '', 'GET', 'http://www.antwoordnummer.nl', 'antwoordnummer.gif', 'Bedrijfsnaam', '', 'Zoek een gratis telefoonnummer van een bedrijf via Antwoordnummer.nl. Vul de bedrijfsnaam in en u krijgt een gratis nummer.', 'Gratis telefoonnummer');
+a['antwnr'] = new Array('http://www.antwoordnummer.nl/zoeken.php', 'zoek', '', 'zoeken', 'antwoordnummer', '', '', '', 'GET', 'http://www.antwoordnummer.nl', 'antwoordnummer.gif', 'Bedrijfsnaam', '', 'Zoek een antwoordnummer van een bedrijf via Antwoordnummer.nl. Vul de bedrijfsnaam in en u krijgt een antwoordnummer.', 'Antwoordnummer');
+a['pipl'] = new Array('http://www.pipl.com/search/', 'FirstName', 'LastName', '', '', '', '', '', 'GET', 'http://www.pipl.com/', 'pipl.gif', 'Voornaam', 'Achternaam', 'Zoek meerdere gegevens van een persoon in een keer met pipl.com. Hiermee doorzoekt u in een keer in meerdere bronnen op internet naar een persoon.', 'Meerdere gegevens persoon');
+a['0900'] = new Array('http://www.0900alternatieven.nl/index.php?ga=Zoek%20Alternatief', 'zoekwoord', '', '', '', '', '', '', 'POST', 'http://www.0900alternatieven.nl/', '0900.gif', 'Bedrijfsnaam', '', 'Zoek een alternatief voor betaalde telefoonnummers of een gratis telefoonnummer van een bedrijf via 0900alternatieven.nl.', 'Alternatief voor 0900 nummer');
+a['postcode'] = new Array('http://www.postcode.nl/index.php', 'address', '', 'action', 'search', 'goto', 'postcoderesult', 'search', 'GET', 'http://www.postcode.nl', 'postcode.png', 'Stad, straat', '', 'Vind een postcode die hoort bij een adres via Postcode.nl. Vu bijvoorbeeld in 1012 NX of Amsterdam, Kalverstraat.', 'Postcode');
+a['hyves'] = new Array('http://www.hyves.nl/search/?#', 'searchhyver', '', '', '', '', '', '', '', 'http://www.hyves.nl', 'hyves.gif', 'Naam', '', 'Zoek iemand op Hyves.nl. Voer de naam in of naam en woonplaats, b.v. Wouter Amsterdam. Werkt nu nog alleen in Firefox', 'Iemand op Hyves'); 
+a['adronpc'] = new Array('http://www.gevonden.cc/postcode.php', 'postalcode', '', '', '', '', '', '', 'POST', 'http://www.gevonden.cc', 'gevonden.png', 'Postcode', '', 'Zoek namen en adressen bij een postcode via Gevonden.cc.', 'Op postcode'); 
+a['adrggl'] = new Array('http://www.google.nl/search', 'as_epq', '', '', '', '', '', '', 'GET', 'http://www.google.nl', 'google.gif', 'Gegevens', '', 'Zoek algemeen op internet op een naam of adres. Type daarvoor de volledige de volledige naam of de straatnaam met huisnummer.', 'Algemeen op naam of adres');
+a['expert'] = new Array('http://www.onderzoekinformatie.nl/nl/oi/nod/expert/search', 'query', '', '', '', '', '', '', 'GET', 'http://www.onderzoekinformatie.nl/', 'oi.gif', 'Naam of trefwoord van onderzoeksgebied', '', 'Zoek een onderzoeker of deskundige uit de universitaire wereld. Te doorzoeken op naam of op trefwoord van onderzoeksgebied', 'Expert (universitiar)');
+a['nieuws'] = new Array('http://news.google.nl', 'q', '', '', '', '', '', 'zoek', 'GET', 'http://news.google.nl', 'google.gif', 'Zoekwoord', '', 'Vul een woord in dat je wilt opzoeken in het Nederlandse nieuws van de afgelopen tijd, via Google News.', 'Nederlands nieuws');
+a['technorati'] = new Array('http://www.technorati.com/query.php', 'q', '', 'type', 'search', '', '', 'Search', 'POST', 'http://www.technorati.com', 'technorati.gif', 'Vul zoekwoord(en) in', '', 'Weblogs zijn goed apart te doorzoeken op actuele berichten. Doorzoek ze met Technorati.', 'In blogs'); 
+a['topix'] = new Array('http://www.topix.com/search/article', 'q', '', '', '', '', '', '', 'GET', 'http://news.google.com', 'topix.gif', 'Vul zoekwoord(en) in', '', 'Vul een woord in dat je wilt opzoeken in het nieuws via Topix.', 'Internationaal nieuws [EN]');
+a['groups'] = new Array('http://groups.google.com/groups/search', 'q', '', '', '', '', '', 'zoek', 'GET', 'http://groups.google.com/', 'google.gif', 'Vul zoekwoord(en) in', '', 'Nieuwsgroepen en andere forums op internet zijn apart doorzoekbaar op actuele berichten. Vul een woord in dat je wilt opzoeken via Google Groups.', 'In nieuwsfora');
+a['persberichten'] = new Array('http://www.perssupport.nl/publishingweb/pressrelease/quick-search.do', 'searchText', '', '', '', '', '', '', 'GET', 'http://www.perssupport.nl/', 'anppers.jpg', 'Vul zoekwoord(en) in', '', 'Persbureau ANP verzamelt persberichten uit allerlei bronnen. Zoek hier in de persberichten via ANP Pers Support', 'Persberichten');
+a['gglv'] = new Array('http://video.google.com/videosearch', 'q', '', 'hl', 'nl', '', '', '', 'GET', 'http://video.google.com/', 'youtube.gif', 'Vul zoekwoord(en) in', '', 'Zoek filmpjes in Google Video, Youtube en andere videosites.', 'Video (Youtube, Google)'); 
+a['livev'] = new Array('http://search.live.com/video/results.aspx', 'q', '', '', '', '', '', '', 'GET', 'http://www.live.com/?scope=video', 'live.gif', 'Vul zoekwoord(en) in', '', 'Zoek video\'s in MSN, Hulu, Mtv, MySpace, etc.', 'Video (MSN, Hulu, Myspace)'); 
+a['yahooi'] = new Array('http://nl.images.search.yahoo.com/search/images', 'p', '', '', '', '', '', '', 'GET', 'http://nl.images.search.yahoo.com/', 'yahoo.gif', 'Vul zoekwoord(en) in', '', 'Zoek afbeeldingen met Yahoo.', 'Afbeeldingen (Yahoo)');
+a['flickr'] = new Array('http://www.flickr.com/search', 'q', '', '', '', '', '', '', 'GET', 'http://www.flickr.com', 'flickr.png', 'Vul zoekwoord(en) in', '', 'Zoek fotos die op Flickr gepubliceerd zijn.', 'Fotos (Flickr)'); 
+a['picasa'] = new Array('http://picasaweb.google.com/lh/view', 'q', '', 'psc', 'g', '', '', '', 'GET', 'http://picasaweb.google.com/', 'picasa.gif', 'Vul zoekwoord(en) in', '', 'Zoek fotos die met Picasa gepubliceerd zijn.', 'Fotos (Picasa)'); 
+
+a['mp3'] = new Array('http:///www.skreemr.com/results.jsp', 'q', '', '', '', '', '', '', 'GET', 'http:///www.skreemr.com', 'skreemr.jpg', 'Vul zoekwoord(en) in', '', 'Zoek op MP3-tjes en andere muziekvormen met Skreemr. Vul de naam van een nummer in, of de naam van een band.', 'MP3'); 
+a['tvgids'] = new Array('http://www.tvgids.nl/zoeken/', 'q', '', '', '', '', '', '', 'GET', 'http://www.tvgids.nl/', 'tvgids.gif', 'Programmanaam', '', 'Zoek in de televisiegids. Vul een programma in dat je wilt opzoeken ', 'In TV Gids');
+a['films'] = new Array('http://www.cinema.nl/zoeken/', 'query', '', 'resultType', 'movie', '', '', '', 'GET', 'http://www.cinema.nl/', 'cinema.gif', 'Titel film', '', 'Zoek films en recensies via cinema.nl.', 'Films');
+a['acteurs'] = new Array('http://www.cinema.nl/zoeken/', 'query', '', 'resultType', 'person', '', '', '', 'GET', 'http://www.cinema.nl/', 'cinema.gif', 'Naam acteur', '', 'Zoek informatie over acteurs via cinema.nl.', 'Acteurs');
+a['livei'] = new Array('http://search.live.com/images/results.aspx', 'q', '', '', '', '', '', '', 'GET', 'http://www.live.com/?scope=images', 'live.gif', 'Vul zoekwoord(en) in', '', 'Zoek afbeeldingen met Live Search.', 'Afbeeldingen (Live)'); 
+a['ggli'] = new Array('http://images.google.nl/images', 'q', '', 'hl', 'nl', '', '', 'btnG', 'GET', 'http://www.google.com/', 'google.gif', 'Vul zoekwoord(en) in', '', 'Zoek afbeeldingen met Google.', 'Afbeeldingen (Google)');
+a['wikinl'] = new Array('http://nl.wikipedia.org/wiki/Special:Search', 'search', '', '', '', '', '', '', 'GET', 'http://nl.wikipedia.org', 'wikipedia.png', 'Trefwoord', '', 'Zoek een woord of definitie in Nederlandse Wikipedia', 'In Wikipedia [NL]');
+a['wikien'] = new Array('http://en.wikipedia.org/wiki/Special:Search', 'search', '', '', '', '', '', '', 'GET', 'http://en.wikipedia.org', 'wikipedia.png', 'Trefwoord', '', 'Zoek een woord of definitie in de Engelstalige Wikipedia', 'In Wikipedia [ENG]');
+a['vandale'] = new Array('http://www.vandale.nl/opzoeken/woordenboek/', 'zoekwoord', '', '', '', '', '', '', 'GET', 'http://www.vandale.nl', 'vandale.png', 'Woord', '', 'Zoek een woord in het woordenboek via VanDale.nl.', 'In NL woordenboek');
+a['syno'] = new Array('http://www.synoniemen.net/index.php', 'zoekterm', '', '', '', '', '', '', 'GET', 'http://www.synoniemen.net/', 'synoniemen.png', 'Woord', '', 'Vul een woord in waarvan je een synoniem wilt, via Synoniemen.net.', 'Synoniemen');
+a['transl'] = new Array('http://translate.google.nl/translate_t', 'text', '', 'tl', 'nl', 'sl', 'auto', '', 'POST', 'http://translate.google.nl/', 'google.gif', 'Woord(en)', '', 'Vertaal een woord of zin met Google Translate naar het Nederlands.', 'Vertaal woorden naar NL');
+a['translpage'] = new Array('http://translate.google.nl/translate', 'u', '', 'tl', 'nl', 'hl', 'nl', '', 'GET', 'http://translate.google.nl/', 'google.gif', 'Adres van site', '', 'Vertaal een hele site met Google Translate naar het Nederlands.', 'Vertaal webpagina in NL');
+a['maps'] = new Array('http://maps.google.nl/maps', 'q', '', 'z', '17', '', '', '', 'GET', 'http://maps.google.nl', 'google.gif', 'Straat, plaats', '', 'Zoek een stad, dorp of een straat via Google Maps. Bijvoorbeeld \'Kalverstraat, Amsterdam\'', 'Kaart en satelliet (Google Maps)');
+a['birdseye'] = new Array('http://maps.live.com/default.aspx', 'where1', '', 'style', 'b', '', '', '', 'GET', 'http://maps.live.com', 'live.gif', 'Straat, plaats', '', 'Bekijk een stad, dorp of straat in vogelblikperspectief (van schuin bovenaf) met Live Maps. Bijvoorbeeld \'Domplein, Utrecht\'. Er zijn niet van alle plaatsen in Nederland foto\'s beschikbaar.', 'Satellietbeeld van schuin boven');
+a['route'] = new Array('http://maps.google.nl/maps', 'saddr', 'daddr', '', '', '', '', '', 'GET', 'http://maps.google.nl', 'google.gif', 'Van', 'Naar', 'Zoek een route met Google Maps. Vul twee keer de straat en plaats in.', 'Route');
+a['plaats'] = new Array('http://www.plaats.nl/', 'countrySearchLocation', '', '', '', '', '', '', 'POST', 'http://www.plaats.nl', 'plaats.jpg', 'Plaats of postcode', '', 'Zoek meerdere gegevens over een stad of dorp, of een postcodegebied met Plaats.nl. Vul de cijfers van een postcode in, of de plaatsnaam, gemeentenaam of provincie.', 'Regio');
+a['marktplaats'] = new Array('http://www.marktplaats.nl/nieuw_zoek.php3', 'q', '', '', '', '', '', '', 'GET', 'http://www.marktplaats.nl/', 'marktplaats.png', 'Product', '', 'Zoek tweedehands producten via marktplaats.nl', 'Spullen (Marktplaats)');
+a['ip'] = new Array('http://www.ipchecking.com/', 'ip', '', '', '', '', '', '', 'GET', 'http://www.ipchecking.com/', 'ipchecking.png', 'IP-adres of domeinnaam', '', 'Zoek gegevens van een ip-adres of een domeinnaam (de uitkomst is 1 domeinnaam, er kunnen meerdere domeinnamen op 1 adres draaien).', 'Gegevens IP-adres');
+a['archive'] = new Array('http://web.archive.org/archive_request_ng', 'url', '', 'collection', 'web', '', '', '', 'GET', 'http://web.archive.org', 'archive.gif', 'Webadres', '', 'Bekijk een oude, gearchiveerde versie van een site via Archive.org. Hiermee is de ontwikkeling van een site goed te zien.', 'Oude versie van een site');
+a['weer'] = new Array('http://www.weer.nl/nl/home/weer/wereldweer/zoekresultaten.html', 'tx_citysearchgeodb_pi1[sword]', '', 'what', 'WeatherLocalUndeclared', 'lswa', 'WeatherLocalUndeclared', '', 'POST', 'http://www.weer.nl', 'weer.png', 'Plaatsnaam', '', 'Bekijk de weersvoorspelling van een plaats via Weer.nl.', 'Weersverwachting');
+a['overheid'] = new Array('http://zoekdienst.overheid.nl/Zoekdienst/overheid.nl/overheid', 'term', '', '', '', '', '', '', 'POST', 'http://www.overheid.nl', 'overheid.gif', 'Vul zoekwoord(en) in', '', 'Zoek binnen diverse bronnen van de overheid (wetten, documenten, persberichten) met Overheid.nl.', 'Overheid.nl');
+a['live'] = new Array('http://search.live.com/results.aspx', 'q', '', '', '', '', '', '', 'GET', 'http://www.live.nl', 'live.gif', 'Vul zoekwoord(en) in', '', 'Doorzoek het internet met Live.', 'Met Live');
+a['yahoo'] = new Array('http://nl.search.yahoo.com/search', 'p', '', '', '', '', '', '', 'GET', 'http://nl.yahoo.com/', 'yahoo.gif', 'Vul zoekwoord(en) in', '', 'Doorzoek het internet met Yahoo.', 'Met Yahoo');
+a['ilse'] = new Array('http://search.ilse.nl/web', 'search_for', '', '', '', '', '', '', 'GET', 'http://www.ilse.nl', 'ilse.gif', 'Vul zoekwoord(en) in', '', 'Doorzoek het internet met Ilse.', 'Met Ilse');
+a['altavista'] = new Array('http://nl.altavista.com/web/results', 'q', '', '', '', '', '', '', 'GET', 'http://www.altavista.nl', 'altavista.gif', 'Vul zoekwoord(en) in', '', 'Doorzoek het internet met Alta Vista.', 'Met Alta Vista');
+
+a['telefoongids'] = new Array ('', '<iframe style="float:right" height="130" width="300" src="http://static.detelefoongids.nl/zoekbox/DTG_300x130_YP1WP0WS0.html?edsacid=3PCK-undefined--300x130YP1WP0WS0" frameborder="0" scrolling="no"><a href="http://www.detelefoongids.nl">De Telefoongids, Bedrijvengids, telefoonnummer</a></iframe> <iframe height="140" width="300" src="http://static.detelefoongids.nl/zoekbox/DTG_300x130_YP0WP1WS0.html?edsacid=3PCK-undefined--300x130YP0WP1WS0" frameborder="0" scrolling="no"><a href="http://www.detelefoongids.nl">De Telefoongids, Bedrijvengids, telefoonnummer</a></iframe>', 'Telefoongids', 'http://www.detelefoongids.nl', 'Zoek telefoonnummers en adressen in de telefoongids.nl', '');
+a['opdatum'] = new Array ('', '<form method="GET" action="http://www.google.nl/search"><input value="" id="text1h" name="as_q" size="45" type="text"><br/><br/><select name="as_qdr"><option value="all">op een willekeurig moment</option><option value="d">afgelopen 24 uur</option><option value="w">afgelopen week</option><option value="m">afgelopen maand</option><option value="y">in het afgelopen jaar</option></select><br/><br/><input name="btnG" value="Zoek" type="submit"></form><input type="hidden" id="text2h" />', 'Google op datum', 'http://www.google.nl', 'Zoek pagina\'s die zijn gemaakt in de afgelopen dag, week, maand of jaar via Google.', 'google.gif');
+a['opadres'] = new Array ('', '<form action="http://www.gevonden.cc/adres.php" method="get">Straat: &nbsp;<input  id="text1h" type="text" name="streetname_i" size="30" /> Nummer: <input type="text" name="housenumber" size="4" /><br/><br/>Plaats: <input  id="text2h" type="text" name="townname_i" size="30" /><br/><br/><input value="Zoek" type="submit"></form>', 'naam en nummer bij adres', 'http://www.gevonden.cc', 'Zoek op wie er op een bepaald adres woont, of wie er in een straat wonen. Vul adres en plaats in en eventueel een huisnummer.', 'gevonden.png');
+
+a['wieowie'] = new Array ('http://www.wieowie.nl/zoeken.php', 'voornaam', 'achternaam', 'extern', '1', '', '', '', 'GET', 'http://www.wieowie.nl/', 'wowlogo.gif', 'Voornaam', 'Achternaam', 'Zoek meerdere gegevens van een persoon in een keer met wieowie.nl. Hiermee doorzoekt u in een keer in meerdere bronnen op internet naar een persoon.');
+
+a['domain'] = new Array('', '<form method="post" action="http://centralops.net/co/DomainDossier.vbs.asp" ><input type="hidden" value="true" name="svc_scan" /><input type="hidden" value="true" name="traceroute" /><input type="hidden" value="true" name="dom_whois" /><input type="hidden" value="true" name="net_whois" /><input type="hidden" value="true" name="dom_dns" /><input name="addr"  id="text1h" size="45">&nbsp;<input type="submit" value="Zoek" ><br/></form><input type="hidden" id="text2h" />', 'Gegevens van domeinnaam.', 'http://www.centralops.net', 'Zoek alle gegevens (naam domeinhouder, telefoonnummer, ip-adres, etc) over een domeinnaam.', 'centralops.gif');
+
+}
+/*wvw*/
+
+
+//@Author: Adrian "yEnS" Mato Gondelle
+//@website: www.yensdesign.com
+//@email: yensamg@gmail.com
+//@license: Feel free to use it, but keep this credits please!					
+
+//SETTING UP OUR POPUP
+//0 means disabled; 1 means enabled;
+var popupStatus = 0;
+
+//loading popup with jQuery magic!
+function loadPopup(){
+	//loads popup only if it is disabled
+	if(popupStatus==0){
+		$("#backgroundPopup").css({
+			"opacity": "0.7"
+		});
+		$("#backgroundPopup").fadeIn("slow");
+		$("#popupContact").fadeIn("slow");
+		popupStatus = 1;
+	}
+}
+
+//disabling popup with jQuery magic!
+function disablePopup(){
+	//disables popup only if it is enabled
+	if(popupStatus==1){
+		$("#backgroundPopup").fadeOut("slow");
+		$("#popupContact").fadeOut("slow");
+		popupStatus = 0;
+	}
+}
+
+//centering popup
+function centerPopup(){
+	//request data for centering
+	var windowWidth = document.documentElement.clientWidth;
+	var windowHeight = document.documentElement.clientHeight;
+	var popupHeight = $("#popupContact").height();
+	var popupWidth = $("#popupContact").width();
+	//centering
+	$("#popupContact").css({
+		"position": "absolute",
+		"top": windowHeight/2-popupHeight/2,
+		"left": windowWidth/2-popupWidth/2
+	});
+	//only need force for IE6
+	
+	$("#backgroundPopup").css({
+		"height": windowHeight
+	});
+	
+}
+
+
+

@@ -1,0 +1,80 @@
+<?xml version = "1.0" ?>
+<Project-list>
+  <Project>
+  <Connections>
+
+  <Connection>
+  <ContentType>URL</ContentType>
+  <Location>http://www.nu.nl/</Location>
+  <Picture>http://nu.nl/favicon.ico</Picture>
+  <Name>Nu.nl</Name>
+  </Connection>
+
+  <Connection>
+  <ContentType>URL</ContentType>
+  <Location>http://www.cnn.com/</Location>
+  <Name>CNN</Name>
+  <Picture>http://www.cnn.com/favicon.ico</Picture>
+  </Connection>
+
+  <Connection>
+  <ContentType>URL</ContentType>
+  <Location>http://www.omroep.nl/</Location>
+  <Name>Omroep</Name>
+  <Picture>http://portal.omroep.nl/gxp/ZivnjrlGE.gif</Picture>
+  </Connection>
+
+  <Connection>
+  <ContentType>URL</ContentType>
+  <Name>Teletekst</Name>
+  <Location>http://teletekst.nos.nl/</Location>
+  <Picture>http://teletekst.nos.nl/tt/gfx/balk1.gif</Picture>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <Location>http://www.parool.nl/</Location>
+  <Name>Parool</Name>
+  <Picture>http://www.ps.nl/images/parool_logo.gif</Picture>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>Document</ContentType>
+  <Location>http&#x3A;&#x2F;&#x2F;www&#x2E;nu&#x2E;nl&#x2F;net</Location>
+  <Picture></Picture>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <Location>http://www.parool.nl/nieuws/</Location>
+  <Name>Parool Lunchnieuws</Name>
+  <Picture>http://www.parool.nl/hp/images/header.gif</Picture>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>Document</ContentType>
+  <Location>C&#x3A;&#x5C;Documents and Settings&#x5C;Administrator&#x5C;My Documents&#x5C;Leonardo Nieuw&#x5C;XML Voorbeelden&#x2E;rtf</Location>
+  <Picture></Picture>
+  </Connection>
+
+  </Connections>
+  <ContentType>URL</ContentType>
+  <Creator></Creator>
+  <DataSource>Nieuwsxdp</DataSource>
+  <DataType></DataType>
+  <DateAccessed></DateAccessed>
+  <DateCreated></DateCreated>
+  <DateModified></DateModified>
+  <Location>projects&#x2F;nieuws&#x2E;xdp</Location>
+  <LocationSecure></LocationSecure>
+  <Name>Nieuws</Name>
+  <NetworkType></NetworkType>
+  <Password></Password>
+  <Picture></Picture>
+  <UserName></UserName>
+  <XDAVersion></XDAVersion>
+  </Project>
+
+</Project-list>

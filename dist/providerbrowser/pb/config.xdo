@@ -1,0 +1,32 @@
+<?xml version = "1.0" ?>
+  <!DOCTYPE XDAConfiguration-list [
+    <!ELEMENT XDAConfiguration-list (XDAConfiguration*) >
+    <!ELEMENT XDAConfiguration (AskForConnection,AutoAssociate,AutoStart,BaseAddress,BrowserType,CacheDir,CacheLevel,Icon,Title,UserLevel,XDAAssociate) >
+    <!ELEMENT AskForConnection (#PCDATA)>
+    <!ELEMENT AutoAssociate (#PCDATA)>
+    <!ELEMENT AutoStart (#PCDATA)>
+    <!ELEMENT BaseAddress (#PCDATA)>
+    <!ELEMENT BrowserType (#PCDATA)>
+    <!ELEMENT CacheDir (#PCDATA)>
+    <!ELEMENT CacheLevel (#PCDATA)>
+    <!ELEMENT Icon (#PCDATA)>
+    <!ELEMENT Title (#PCDATA)>
+    <!ELEMENT UserLevel (#PCDATA)>
+    <!ELEMENT XDAAssociate (#PCDATA)>
+  ]>
+<XDAConfiguration-list>
+  <XDAConfiguration>
+  <AskForConnection>yes</AskForConnection>
+  <AutoAssociate>no</AutoAssociate>
+  <AutoStart>no</AutoStart>
+  <BaseAddress>http&#x3A;&#x2F;&#x2F;www&#x2E;woutervanwijk&#x2E;nl&#x2F;providerbrowser&#x2F;data&#x2F;</BaseAddress>
+  <BrowserType>ie</BrowserType>
+  <CacheDir></CacheDir>
+  <CacheLevel>automatic</CacheLevel>
+  <Icon></Icon>
+  <Title>Planet Internet Browser</Title>
+  <UserLevel>expert</UserLevel>
+  <XDAAssociate>yes</XDAAssociate>
+  </XDAConfiguration>
+
+</XDAConfiguration-list>

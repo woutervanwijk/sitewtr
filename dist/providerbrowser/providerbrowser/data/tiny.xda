@@ -1,0 +1,107 @@
+<?xml version = "1.0" ?>
+
+<ControlsData-list>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <BackColor>dddddd</BackColor>
+  <ControlType>Panel</ControlType>
+  <Height>40</Height>
+  <Left>0</Left>
+  <Name>ControlsPanel</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Label</ControlType>
+  <Action>Forward</Action>
+  <Description>Forward?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>15</Height>
+  <Caption>Forward</Caption>  
+  <Left>51</Left>
+  <Location>Browser:Forward</Location>
+  <LayOut>border</LayOut>
+  <Parent>ControlsPanel</Parent>
+  <Name>Forward</Name>
+  <Top>1</Top>
+  <Width>53</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Label</ControlType>
+  <Action>Refresh</Action>
+  <Description>Refresh?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <LayOut>border</LayOut>
+  <Height>15</Height>
+  <Caption>Refresh</Caption>  
+  <Left>151</Left>
+  <Location>Browser:Refresh</Location>
+  <Parent>ControlsPanel</Parent>
+  <Name>Refresh</Name>
+  <Top>1</Top>
+  <Width>53</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Label</ControlType>
+  <Action>Stop</Action>
+  <LayOut>border</LayOut>
+  <Description>Stop?!!</Description>
+  <Height>15</Height>
+  <Caption>Stop</Caption>  
+  <Left>101</Left>
+  <Location>Browser:Stop</Location>
+  <Parent>ControlsPanel</Parent>
+  <Name>Stop</Name>
+  <Top>1</Top>
+  <Width>53</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>Back</Action>
+  <ControlType>Label</ControlType>
+  <Description>Back?!!</Description>
+  <Parent>ControlsPanel</Parent>
+  <Caption>Back</Caption>  
+  <LayOut>border</LayOut>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>15</Height>
+  <Left>1</Left>
+  <Location>Browser:Back</Location>
+  <Name>Back</Name>
+  <Top>1</Top>
+  <Width>53</Width>
+  </ControlsData>
+
+
+  <ControlsData>
+  <Action>go</Action>
+  <Align>Bottom</Align>
+  <ControlType>TextBox</ControlType>
+  <DependsOn>all ProjectViewer TabBar</DependsOn>
+  <Description>Location!</Description>
+  <Parent>ControlsPanel</Parent>
+  <Height>15</Height>
+  <Left>0</Left>
+  <Location>huh</Location>
+  <Name>Text</Name>
+  <Top>12</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Client</Align>
+  <ControlType>Project</ControlType>
+  <DependsOn>All Stop Forward Back Text Tabs2</DependsOn>
+  <Description>Click Here!!</Description>
+  <Left>0</Left>
+  <Location>controls/dvmbrowser.xdc</Location>
+  <Name>ProjectViewer</Name>
+  <Top>0</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+</ControlsData-list>

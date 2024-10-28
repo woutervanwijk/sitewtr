@@ -1,0 +1,96 @@
+<?xml version = "1.0" ?>
+  <Project>
+  <Connections>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>URL</ContentType>
+  <DataSource>www.slashdot.org</DataSource>
+  <Location>www.slashdot.org</Location>
+  <Name>/.</Name>
+  <Caption>Slash</Caption>
+  <Picture>slashdot.gif</Picture>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>URL</ContentType>
+  <Location>www.linuxtoday.org</Location>
+  <Name>Linux Today</Name>
+  <Picture>lintoday.png</Picture>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>URL</ContentType>
+  <Location>www.zdnet.com/news</Location>
+  <Picture>test2.png</Picture>
+  <Name>ZDNet News</Name>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>URL</ContentType>
+  <Location>www.news.com</Location>
+  <Picture>test1.png</Picture>
+  <Name>News.com</Name>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>URL</ContentType>
+  <Location>www.osopinion.com</Location>
+  <Name>OS Opinion</Name>
+  <Picture>http://www.osopinion.com/images/new/oso-logo-a.gif</Picture>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>URL</ContentType>
+  <Location>dot.kde.org</Location>
+  <Name>KDE</Name>
+  <Picture>http://www.kde.org/favicon.ico</Picture>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>URL</ContentType>
+  <Location>www.theregister.co.uk</Location>
+  <Name>The Register</Name>
+  <Picture>http://www.theregister.co.uk/favicon.ico</Picture>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>URL</ContentType>
+  <Location>www.webwereld.nl</Location>
+  <Name>WebWereld</Name>
+  <Picture>test3.png</Picture>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>URL</ContentType>
+  <DataSource>http://www.google.com/press/zeitgeist.html</DataSource>
+  <Location>http://www.google.com/press/zeitgeist.html</Location>
+  <Picture>http://www.google.com/favicon.ico</Picture>
+  <Name>Zeitgeist</Name>
+  </Connection>
+
+  </Connections>
+  <ContentType>Document</ContentType>
+  <Creator></Creator>
+  <DataSource>c&#x3A;&#x5C;xda&#x5C;doelen&#x2E;rtf</DataSource>
+  <DataType></DataType>
+  <DateAccessed></DateAccessed>
+  <DateCreated></DateCreated>
+  <DateModified></DateModified>
+  <Location>projects&#x2F;xda&#x2E;xdp</Location>
+  <LocationSecure></LocationSecure>
+  <Name>XDA</Name>
+  <NetworkType></NetworkType>
+  <Password></Password>
+  <Picture></Picture>
+  <UserName></UserName>
+  <XDAVersion></XDAVersion>
+  </Project>

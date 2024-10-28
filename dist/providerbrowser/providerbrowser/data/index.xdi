@@ -1,0 +1,7 @@
+<?xml version = "1.0" ?>
+<Initialize-list>
+  <Initialize>
+  <Controls>planetalt.xda</Controls>
+   <Projects>prj.xdi</Projects>
+  </Initialize>
+</Initialize-list>

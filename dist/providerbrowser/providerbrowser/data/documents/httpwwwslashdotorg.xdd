@@ -1,0 +1,11 @@
+<?xml version = "1.0" ?>
+  <Document>
+  <Connections>
+
+  </Connections>
+  <ContentType>URL</ContentType>
+  <DataSource>http&#x3A;&#x2F;&#x2F;www&#x2E;slashdot&#x2E;org&#x2F;</DataSource>
+  <Location>httpwwwslashdotorg&#x2E;xdd</Location>
+  <Name>Slashdot</Name>
+  <TechnicalType>org&#x2F;</TechnicalType>
+  </Document>

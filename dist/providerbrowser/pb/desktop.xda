@@ -1,0 +1,39 @@
+<?xml version = "1.0" ?>
+<ControlsData-list>
+
+  <ControlsData>
+  <Align>Bottom</Align>
+  <ControlType>Splitter</ControlType>
+  <Height>10</Height>
+  <Left>21</Left>
+  <Name>Splitter</Name>
+  <Top>49%</Top>
+  <Width>20</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Client</Align>
+  <ControlType>Viewer</ControlType>
+  <Height>50</Height>
+  <Left>10</Left>
+  <Location>%desktopdir%</Location>
+  <Name>List</Name>
+  <Top>10</Top>
+  <Width>100</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Bottom</Align>
+  <DependsOn>All</DependsOn>
+  <ControlType>Viewer</ControlType>
+  <Height>66&#x25;</Height>
+  <Left>10</Left>
+  <Location>%desktopdir%</Location>
+  <Name>Viewer</Name>
+  <Top>50%</Top>
+  <Width>100</Width>
+  </ControlsData>
+
+
+
+</ControlsData-list>

@@ -1,0 +1,82 @@
+<?xml version = "1.0" ?>
+<ControlsData-list>
+
+  <ControlsData>
+  <Align>Left</Align>
+  <ControlType>Panel</ControlType>
+  <Height>100&#x25;</Height>
+  <Left>0&#x25;</Left>
+  <Name>Panel1</Name>
+  <NoContentType></NoContentType>
+  <Top>0&#x25;</Top>
+  <Width>33&#x25;</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Left</Align>
+  <ControlType>Splitter</ControlType>
+  <Height>100&#x25;</Height>
+  <Left>100&#x25;</Left>
+  <Name>Splitter1</Name>
+  <Top>0</Top>
+  <Width>5</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <BackColor>ff4400</BackColor>
+  <Color>666600</Color>
+  <ContentType>All</ContentType>
+  <ControlType>Viewer</ControlType>
+  <Height>40&#x25;</Height>
+  <Left>0&#x25;</Left>
+  <Location>%mydocumentsdir%</Location>
+  <Name>List1</Name>
+  <LayOut>folders smallicons</LayOut>
+  <Parent>Panel1</Parent>
+  <Top>25&#x25;</Top>
+  <Width>10&#x25;</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <ControlType>Splitter</ControlType>
+  <Height>4</Height>
+  <Left>0</Left>
+  <Name>Splitter2</Name>
+  <Top>10</Top>
+  <Width>100%</Width>
+  <Parent>Panel1</Parent>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Client</Align>
+  <BackColor>ff4400</BackColor>
+  <Color>666600</Color>
+  <ContentType>All</ContentType>
+  <ControlType>Viewer</ControlType>
+  <Height>100&#x25;</Height>
+  <ItemHeight>50%</ItemHeight>
+  <ItemWidth>50%</ItemWidth>
+  <Left>0&#x25;</Left>
+  <Location>%desktopdir%</Location>
+  <Name>List1</Name>
+  <LayOut>folders smallicons</LayOut>
+  <Parent>Panel1</Parent>
+  <Top>25&#x25;</Top>
+  <Width>10&#x25;</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Client</Align>
+  <ControlType>Viewer</ControlType>
+  <DependsOn>All List1</DependsOn>
+  <Height>64&#x25;</Height>
+  <Left>0&#x25;</Left>
+  <Location>%favoritesdir%</Location>
+  <Name>Viewer1</Name>
+  <Top>37&#x2E;3&#x25;</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+</ControlsData-list>

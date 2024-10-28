@@ -1,0 +1,38 @@
+<?xml version = "1.0" ?>
+<Project-list>
+  <Project>
+  <Connections>
+
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>Document</ContentType>
+  <Location>http&#x3A;&#x2F;&#x2F;directory&#x2E;google&#x2E;com&#x2F;Top&#x2F;Arts&#x2F;</Location>
+  <Picture>http://www.google.com/favicon.ico</Picture>
+  </Connection>
+
+  <Connection>
+  <ConnectionType>Married</ConnectionType>
+  <ContentType>Document</ContentType>
+  <Location>C&#x3A;&#x5C;Documents and Settings&#x5C;Administrator&#x5C;Desktop&#x5C;ezdavlib0&#x2E;3&#x5C;webdav&#x2E;pas</Location>
+  <Picture>http://www.google.com/favicon.ico</Picture>
+  </Connection>
+
+  </Connections>
+  <ContentType>Document</ContentType>
+  <Creator></Creator>
+  <DataSource>http&#x3A;&#x2F;&#x2F;www&#x2E;google&#x2E;com&#x2F;</DataSource>
+  <DataType></DataType>
+  <DateAccessed></DateAccessed>
+  <DateCreated></DateCreated>
+  <DateModified></DateModified>
+  <Location>projects&#x2F;google&#x2E;xdp</Location>
+  <Name>Google</Name>
+  <NetworkType></NetworkType>
+  <Password></Password>
+  <Picture></Picture>
+  <UserName></UserName>
+  <XDAVersion></XDAVersion>
+  </Project>
+
+</Project-list>

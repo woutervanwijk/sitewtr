@@ -1,0 +1,25 @@
+body			{margin: 0px; padding: 0px;}
+TR.donkergrijs		{background-color: #bbc1cb;}
+.donkergrijs		{background-color: #bbc1cb;}
+TR.donkerstgrijs	{background-color: #595959;}
+TR.rood			{background-color: #ed1c24;}
+TD.donkergrijs		{background-color: #bbc1cb;}
+TD.rood			{background-color: #ed1c24;}
+TR.grijs		{background-color: #e6e9f1;}
+A.streep		{font-family: verdana,arial,helvetica,sans-serif; font-size: 10px; font-weight: bold; color: #000000;}
+A.streep-normal		{font-family: verdana,arial,helvetica,sans-serif; font-size: 10px; color:#000000;}
+A.streeploos		{font-family: verdana,arial,helvetica,sans-serif; font-size: 10px; font-weight: bold; color: #000000; text-decoration: none;}
+A.streeploos-wit	{font-family: verdana,arial,helvetica,sans-serif; font-size: 10px; font-weight: bold; color: #ffffff; text-decoration: none;}
+.streeploos		{font-family: verdana,arial,helvetica,sans-serif; font-size: 10px; font-weight: bold; color: #000000; text-decoration: none;}
+INPUT.text		{font-family: arial,helvetica,sans-serif; font-size: 8pt; color: #000000; width: 159px; height: 20px;}
+.kop			{font-family: verdana,arial,helvetica,sans-serif; font-size: 10px; font-weight: bold; color: #000000;}
+.kopgroot		{font-family: verdana,arial,helvetica,sans-serif; font-size: 26px; font-weight: bold; color: #ed1c24;}
+.kop-wit		{font-family: verdana,arial,helvetica,sans-serif; font-size: 10px; font-weight: bold; color: #ffffff;}
+.normal			{font-family: verdana,arial,helvetica,sans-serif; font-size: 11px; color: #000000;}
+.small			{font-family: verdana,arial,helvetica,sans-serif; font-size: 10px; color: #000000;}
+.klein-wit		{font-family: verdana,arial,helvetica,sans-serif; font-size: 10px; color: #ffffff;}
+.subkop			{font-family: verdana,arial,helvetica,sans-serif; font-size: 10px; font-weight: bold; color: #000000;}
+.stip			{background-image: url(gfx/internet100_stippellijntje.gif);}
+.vstip			{background-image: url(gfx/internet100_stippellijntje_verticaal.gif);}
+.form			{margin-top: 3px; margin-bottom: 3px; margin-right: 2px;}
+.randje			{border-style: solid; border-color: #000000; border-width: 1px;}

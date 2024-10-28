@@ -1,0 +1,11 @@
+<?xml version = "1.0" ?>
+  <Document>
+  <Connections>
+
+  </Connections>
+  <ContentType>URL</ContentType>
+  <DataSource>http&#x3A;&#x2F;&#x2F;directory&#x2E;google&#x2E;com&#x2F;</DataSource>
+  <Location>httpdirectorygooglecom&#x2E;xdd</Location>
+  <Name>Google Web Directory</Name>
+  <TechnicalType>com&#x2F;</TechnicalType>
+  </Document>

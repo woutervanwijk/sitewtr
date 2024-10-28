@@ -1,0 +1,218 @@
+<?xml version = "1.0" ?>
+<ControlsData-list>
+
+  <ControlsData>
+  <Action>HttpGet</Action>
+  <Color>ffffff</Color>
+  <BackColor>666666</BackColor>
+  <ControlType>TextBox</ControlType>
+  <Parent>SubPanel</Parent>
+  <Height>20</Height>
+  <Left>80%</Left>
+  <Location>http://www.nationaletelefoongids.nl/cgi-bin/vnuwp.cgi?screen=welcome&link=summary&lang=dutch&max=15&keyword=*&searchtype=business&bname=</Location>
+  <Name>TextSearch</Name>
+  <Top>5</Top>
+  <Width>150</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>TextBox</ControlType>
+  <Color>000000</Color>
+  <BackColor>FFe744</BackColor>
+  <DependsOn>All</DependsOn>
+  <Description>Location!</Description>
+  <Parent>ControlsPanel</Parent>
+  <Height>20</Height>
+  <Left>6</Left>
+  <Location>huh</Location>
+  <Name>Textloc</Name>
+  <Top>80</Top>
+  <Width>350</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <BackColor>FFD633</BackColor>
+  <ControlType>Panel</ControlType>
+  <Picture>zonback.gif</Picture>
+  <LayOut>stretch</LayOut>
+  <Height>105</Height>
+  <Left>0</Left>
+  <Name>ControlsPanel</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Right</Align>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Picture>http://www.zonnet.nl/headers/logo.gif</Picture>
+  <Height>80</Height>
+  <Parent>ControlsPanel</Parent>
+  <LayOut>pictureright</LayOut>
+  <Location>http://www.zonnet.nl/</Location>
+  <Left>200</Left>
+  <Name>Adv</Name>
+  <Top>10</Top>
+  <Width>185</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Splitter</ControlType>
+  <Align>Top</Align>
+  <Height>3</Height>
+  <Left>0</Left>
+  <Color>2222AA</Color>
+  <Name>TopSplitter</Name>
+  <Top>100</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>Back</Action>
+  <ControlType>Image</ControlType>
+  <Description>Back?!!</Description>
+  <Parent>ControlsPanel</Parent>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>65</Height>
+  <Left>10</Left>
+  <Location>Browser:Back</Location>
+  <Picture>planet\back.gif</Picture>
+  <MouseOverPicture>planet\backmouseover.gif</MouseOverPicture>
+  <Name>Back</Name>
+  <Top>10</Top>
+  <Width>65</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Action>Forward</Action>
+  <Description>Forward?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>65</Height>
+  <Left>75</Left>
+  <Location>Browser:Forward</Location>
+  <MouseOverPicture>planet\forwardmouseover.gif</MouseOverPicture>
+  <Picture>planet\forward.gif</Picture>
+  <Parent>ControlsPanel</Parent>
+  <Name>Forward</Name>
+  <Top>10</Top>
+  <Width>65</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>000066</Color>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>go</Action>
+  <Description>Bookmarks</Description>
+  <Height>75</Height>
+  <Caption>Favorieten</Caption>  
+  <Left>320</Left>
+  <Location>%favoritesdir%</Location>
+  <Picture>planet\book.gif</Picture>
+  <MouseOverPicture>planet\bookmouseover.gif</MouseOverPicture>
+  <Parent>ControlsPanel</Parent>
+  <Name>Favorites</Name>
+  <Top>3</Top>
+  <Width>85</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>000066</Color>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>go</Action>
+  <Description>E-mail</Description>
+  <Height>75</Height>
+  <Caption>E-Mail</Caption>  
+  <Left>230</Left>
+  <Location>http://www.gen.zonnet.nl/login/nl/login.shtml</Location>
+  <Picture>planet\email.gif</Picture>
+  <MouseOverPicture>planet\emailmouseover.gif</MouseOverPicture>
+  <Parent>ControlsPanel</Parent>
+  <Name>email</Name>
+  <Top>3</Top>
+  <Width>85</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Color>000066</Color>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <Action>go</Action>
+  <Description>De Zon Net Startpagina</Description>
+  <Height>75</Height>
+  <Caption>Startpagina</Caption>  
+  <Left>141</Left>
+  <Location>http://www.zonnet.nl/</Location>
+  <Picture>planet\home.gif</Picture>
+  <MouseOverPicture>planet\homemouseover.gif</MouseOverPicture>
+  <Parent>ControlsPanel</Parent>
+  <Name>Home</Name>
+  <Top>3</Top>
+  <Width>85</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Color>000066</Color>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <Action>Refresh</Action>
+  <Description>Refresh?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>30</Height>
+  <Caption>Refresh</Caption>  
+  <Left>420</Left>
+  <Location>Browser:Refresh</Location>
+  <Parent>ControlsPanel</Parent>
+  <Name>Refresh</Name>
+  <Top>70</Top>
+  <Width>60</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>000066</Color>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>Stop</Action>
+  <Description>Stop?!!</Description>
+  <Height>30</Height>
+  <Caption>Stop</Caption>  
+  <Left>370</Left>
+  <Location>Browser:Stop</Location>
+  <Parent>ControlsPanel</Parent>
+  <Name>Stop</Name>
+  <Top>70</Top>
+  <Width>60</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Bottom</Align>
+  <Action>setproject</Action>
+  <ControlType>TabBar</ControlType>
+  <DependsOn>Stop Text Tabs2</DependsOn>
+  <Height>23</Height>
+  <Description>Click Here!!</Description>
+  <Left>0</Left>
+  <Location>A</Location>
+  <Name>Tabs2</Name>
+  <Top>100%</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>client</Align>
+  <ControlType>Project</ControlType>
+  <DependsOn>All Refresh Stop Forward Back Text Tabs2</DependsOn>
+  <Description>Click Here!!</Description>
+  <Left>0</Left>
+  <Location>controls/zonbrowser.xdc</Location>
+  <Name>ProjectViewer</Name>
+  <Top>0</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+</ControlsData-list>

@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>De Telefoongids</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+
+	<link href="_css/box_300.css" rel="stylesheet" type="text/css" media="all" />
+	<script language="JavaScript" type="text/javascript" src="_js/boxes.js"></script>
+
+	<script type="text/javascript">
+	
+	window.onload = function() {
+		initTGIWhite();
+	}
+		
+	</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="header">
+		<h1 class="white">De Telefoongids</h1>
+	</div>
+	
+	<div id="content">
+
+		<div id="white" class="content">
+			<form name="tgiwhite" action="#" method="get" target="_blank" onsubmit="if (validateTGIWhite(this)) { submitTGIWhite(this) } else { return false };">
+				<input type="hidden" name="edsacid" value="" />
+				<div class="name">
+					<h6>Wie</h6>
+					<input type="text" name="wie" id="wie" value="" class="text" onfocus="fldFocus(this)" onblur="fldBlur(this)" onkeydown="hideError()" />
+				</div>
+				<div class="city">
+
+					<h6>Waar</h6>
+					<input type="text" name="waar" id="waar" value="" class="text" onfocus="fldFocus(this)" onblur="fldBlur(this)" onkeydown="hideError()" />
+				</div>	
+				<input class="bnSearch" type="image" name="Zoek" src="images/zoek3.gif" alt="Zoek" />
+				<a class="logoTGI" href="http://www.detelefoongids.nl" target="_blank"><img src="images/telefoongids2.gif" alt="De Telefoongids" /></a>
+			</form>
+		</div>
+		
+		<div id="error"></div>
+	</div>
+
+</div>
+
+</body>
+</html>
+

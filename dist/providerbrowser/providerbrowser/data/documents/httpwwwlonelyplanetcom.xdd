@@ -1,0 +1,12 @@
+<?xml version = "1.0" ?>
+  <Document>
+  <Connections>
+
+  </Connections>
+  <ContentType>URL</ContentType>
+  <DataSource>http&#x3A;&#x2F;&#x2F;www&#x2E;lonelyplanet&#x2E;com&#x2F;</DataSource>
+  <Location>httpwwwlonelyplanetcom&#x2E;xdd</Location>
+  <Name>Lonely Planet Online</Name>
+  <TechnicalType>com&#x2F;</TechnicalType>
+  <Picture>http://www.lonelyplanet.com/graffix/logo.gif</Picture>
+  </Document>

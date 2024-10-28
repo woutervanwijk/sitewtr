@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl"><head>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta content="true" name="MSSmartTagsPreventParsing" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link href="src.ico" rel="shortcut icon" />
+<link href="src.ico" rel="icon" />
+<script type='text/javascript' src='jquery-1.3.2.min.js'></script>
+<script type='text/javascript' src='jquery.cookie.js'></script>
+<script type='text/javascript' src='jquery.history.js'></script>
+<link rel="stylesheet" href="zoek.css" type="text/css" media="screen" />
+<script type="text/javascript" src="zoek.m.js">
+</script>
+
+<title>Zoek+</title>
+
+</head>
+ 
+<body>
+
+<h1 class="nobar">Zoek<sup>+</sup></h1>
+
+<div align="center">
+<div id="centerwidth">
+<div id="centerframe" align="left">
+
+<ul id="nav">
+<li><a href="#">Algemeen</a>
+	<ul>
+		<li class="lihr"><a href="#" name="google">Met Google</a></li>
+		<li><a href="#" name="ixquick">In meerdere machines tegelijk</a></li>
+		<li><a href="#" name="live">Met Live (MSN)</a></li>
+		<li><a href="#" name="yahoo">Met Yahoo</a></li>
+		<li class="lihr"><a href="#" name="exact">Met exacte woordcombinatie</a></li>
+ 		<li><a href="#" name="opdatum">Op datum</a></li>
+		<li><a href="#" name="eenvan">Een van de woorden (OR)</a></li>
+		<li class="lihr"><a href="#" name="pdf">In Publicaties [PDF]</a></li>
+		<li><a href="#" name="doc">In Documenten [Word]</a></li>
+		<li><a href="#" name="xls">In Spreadsheets [Excel]</a></li>
+		<li><a href="#" name="ppt">In Presentaties [Powerpoint]</a></li>
+	</ul>
+</li>
+
+<li><a href="#">Telefoon, Adres</a>
+	<ul>
+		<li class="lihr"><a href="#" name="telefoongids">Telefoongids</a></li>
+		<li><a href="#" name="bedrijf">Bedrijf</a></li>
+		<li class="lihr"><a href="#" name="optelnr">Op telefoonnummer</a></li> 
+		<li><a href="#" name="opadres">Op adres</a></li>
+		<li class="lihr"><a href="#" name="maps">Adres op Kaart en satelliet</a></li>
+		<li><a href="#" name="tomtom">Route</a></li>
+		<li class="lihr"><a href="#" name="antwoordnummer">Antwoordnummer</a></li>
+		<li><a href="#" name="postcode">Postcode bij adres</a></li> 
+		<li><a href="#" name="adresbijpc">Adres bij postcode</a></li> 
+		<li class="lihr"><a href="#" name="0900">Alternatief voor 0900 nummer</a></li> 
+		<li><a href="#" name="gratistel">Gratis telefoonnummer</a></li>  
+	</ul>
+</li>
+	<li><a href="#">Persoon</a>
+		<ul>
+			<li class="lihr"><a href="#" name="hyves">In Hyves</a></li>  
+			<li><a href="#" name="schoolbank">In Schoolbank</a></li>  
+			<li class="lihr"><a href="#" name="wieowie">In meerdere bronnen(WieoWie)</a></li>
+			<li><a href="#" name="pipl">In meerdere bronnen (Pipl)</a></li> 
+			<li class="lihr"><a href="#" name="naam">Op (deel van) naam</a></li> 
+			<li><a href="#" name="adresviaggl">Algemeen op naam of adres</a></li>
+			<li class="lihr"><a href="#" name="expert">Expert (universitiar)</a></li>
+		</ul>
+	</li>
+
+<li><a href="#">Nieuws, Fora, Blogs</a>
+	<ul>
+		<li class="lihr"><a href="#" name="nieuws">Nederlands nieuws</a></li>
+		<li><a href="#" name="intnieuws">Internationaal nieuws [EN]</a></li>
+		<li class="lihr"><a href="#" name="blogs">In blogs</a></li> 
+		<li><a href="#" name="twitter">In Twitter</a></li> 
+		<li class="lihr"><a href="#" name="groups">In nieuwsfora</a></li>
+		<li class="lihr"><a href="#" name="persberichten">Persberichten</a></li>
+<!--		<li><a href="#" onclick="changeForm(this.firstChild.nodeValue, 'http://www.persberichten.com/persberichtfilter.aspx', 'q', '', 'as_sitesearch', 'persberichten.com', '', '', '', 'GET', 'http://www.persberichten.com/', '.gif', 'Zoekwoord:', '', 'Vul een zoekwoord in dat je wilt opzoeken via persberichten.com'); return true;">Persberichten</a></li> -->
+	</ul>
+</li>
+	
+<li><a href="#">Beeld</a>
+		<ul>
+			<li class="lihr"><a href="#" name="gglvideo">Video (Youtube, Google)</a></li> 
+			<li><a href="#" name="livevideo">Video (MSN, Hulu, Myspace)</a></li> 
+			<li class="lihr"><a href="#" name="yahooimages">Afbeeldingen (Yahoo)</a></li>			
+<!--			<li><a href="#" name="uitzendinggemist">In Uitzendinggemist</a></li> -->
+			<li><a href="#" name="liveimages">Afbeeldingen (Live)</a></li> 
+			<li><a href="#" name="gglimages">Afbeeldingen (Google)</a></li>
+			<li class="lihr"><a href="#" name="flickr">Fotos (Flickr)</a></li> 
+			<li><a href="#" name="picasa">Fotos (Picasa)</a></li> 
+	</ul>
+</li>
+
+<li><a href="#">Naslag &amp; taal</a>
+	<ul>
+		<li class="lihr"><a href="#" name="wikinl">In Wikipedia [NL]</a></li>
+		<li class="lihr"><a href="#" name="vandale">In NL woordenboek</a></li>
+		<li><a href="#" name="synoniemen">Synoniemen</a></li>
+		<li><a href="#" name="transl">Vertaal woord naar NL</a></li>
+		<li class="lihr"><a href="#" name="films">Films</a></li>
+		<li><a href="#" name="acteurs">Acteurs</a></li>
+		<li><a href="#" name="imdb">Films &amp; Acteurs [EN]</a></li>
+		<li><a href="#" name="tvgids">In TV Gids</a></li>
+	</ul>
+</li>
+<!--
+<li><a href="#">Locatie &amp; route</a>
+	<ul>
+		<li><a href="#" name="maps">Kaart en satelliet (Google Maps)</a></li>
+		<li><a href="#" name="birdseye">Satellietbeeld van schuin boven</a></li>
+	</ul>
+</li>
+-->
+ <li><a href="#">Sites</a>
+	<ul>
+		<li class="lihr"><a href="#" name="binnensite">Zoek binnen een site</a></li>
+		<li class="lihr"><a href="#" name="translpage">Vertaal webpagina</a></li>
+		<li class="lihr"><a href="#" name="related">Gerelateerde pagina's</a></li>
+		<li><a href="#" name="linkto">Verwijzende pagina's</a></li>
+		<li><a href="#" name="internetarchive">Oude versie van een site</a></li>
+		<li class="lihr"><a href="#" name="domain">Gegevens domein</a></li>
+		<li><a href="#" name="detailsdomain">Details domein</a></li>
+		<li><a href="#" name="ip">Gegevens IP-adres</a></li>
+	</ul>
+ </li>
+	
+
+<li><a href="#">Overig</a>
+	<ul>
+		<li class="lihr"><a href="#" name="mp3">Muziek (MP3 e.a.)</a></li> 
+		<li><a href="#" name="marktplaats">Spullen (Marktplaats)</a></li>
+		<li><a href="#" name="weer">Weersverwachting</a></li>	
+		<li><a href="#" name="overheid">Overheid.nl</a></li>
+	</ul>
+</li>
+
+</ul>
+
+
+<br/>
+<br/>
+ <h2  align="left"><a href="http://" target="_blank" id="searchurl"><span id="logo"><img id="image" src="" alt="Logo" /></span><span id="searchtitle">&nbsp;</span></a></h2>	
+<p id="descr" class="nobar">&nbsp;</p>
+
+	<div id="htmldiv" align="left">&nbsp;
+	</div>
+  
+	<div id="formdiv" align="left">
+<!--	<form target="trg" name="zoekform" id="zoekform" onsubmit="return setBar(true);" action="" method="">  -->
+	<form name="zoekform" id="zoekform" onsubmit="return subm();" action="" method="get">  
+		<p id="text1descr" >&nbsp;</p>
+		<input name="q" type="text" id="text1" size="45" onfocus="this.select()" />
+		<div style="display:none;" id="spantext2">
+		<p id="text2descr" > &nbsp;</p>
+		<input type="text" size="45" id="text2" onfocus="this.select()" /></div>
+		<input type="hidden" id="hidden1" />
+		<input type="hidden" id="hidden2" />
+		<input type="hidden" id="hidden3" />
+		<input type="hidden" id="hidden4" />
+		<input id="submit" value="Zoek" type="submit" /><br />
+	</form>
+	</div>
+
+</div>
+<div id="statusbar" align="left">&nbsp;</div>
+
+
+
+</div>
+</div>
+
+<!-- <iframe src="about:blank" name="trg" class="inbar" id="trg" width="100%" height="100%" ></iframe>  -->
+
+
+<div class="nobar" style="text-align: right;">
+
+<div id="homepage" class="nobar" align="left"><p><input type="checkbox" id="checktarget" onclick="return changeTarget()" /><label for="checktarget">Open resultaten in nieuw venster</label></p>
+<p><a href="#" onclick="setHomePage();return true;" id="home">Maak Startpagina</a>
+</p></div>
+<div id="copy" ><p><a href="about.html">Meld probleem<br/><br/>&copy; 2009 WvW</a></p></div>
+
+</div>
+
+</body></html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl"><head>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta content="true" name="MSSmartTagsPreventParsing" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="description=" content="Met Zoek+ vind je meer! Zoek eenvoudig in verschillende zoekmachines en met handige zoektrucs." />
+<meta name="keywords" content="zoeken, eenvoudig, verschillende, zoekmachines, zoektrucs, trucs, zoekplus, zoek, zoek menu" />
+<meta name="revisit-after" content="7 days" />
+<meta name="copyright" content="(c) 2010 Wouter van Wijk" />
+<meta name="author" content="Wouter van Wijk" />
+
+<link href="favicon.ico" rel="shortcut icon" />
+<link href="favicon.ico" rel="icon" />
+<script type='text/javascript' src='jquery-1.3.2.min.js'></script>
+<script type='text/javascript' src='jquery.historycookie.js'></script>
+<link rel="stylesheet" href="zoek.css" type="text/css" media="screen" />
+<script type="text/javascript" src="zoek.js">
+</script>
+
+<title>Zoek+</title>
+
+</head>
+ 
+<body>
+
+
+<h1><!-- <img src="img/zplogo.png" alt="Zoek+ Logo" title="Zoek+ Logo" /><br/>-->Zoek<sup>+</sup></h1>
+
+
+<div align="center">
+<div id="centerwidth">
+<div id="centerframe" align="left">
+
+<ul id="nav">
+<li><a href="#">Algemeen</a>
+	<ul>
+<a href="#" name="google">Met Google</a>
+<a href="#" name="ixquick">In meerdere machines tegelijk</a>
+<a href="#" name="bing">Met Bing</a>
+<a href="#" name="yahoo">Met Yahoo</a>
+<a href="#" name="exact">Met exacte woordcombinatie</a>
+<!-- <a href="#" name="opdatum">Op datum</a> -->
+<a href="#" name="eenvan">Een van de woorden (OR)</a>
+<a href="#" name="pdf">In Publicaties [PDF]</a>
+<a href="#" name="doc">In Documenten [Word]</a>
+<a href="#" name="xls">In Spreadsheets [Excel]</a>
+<a href="#" name="ppt">In Presentaties [Powerpoint]</a>
+	</ul>
+
+
+<li><a href="#">Telefoon, Adres</a>
+	<ul>
+<a href="#" name="telefoongids">In Telefoongids</a>
+<a href="#" name="bedrijf">Bedrijf</a>
+<a href="#" name="optelnr">Op telefoonnummer</a> 
+<a href="#" name="opadres">Op adres</a>
+<a href="#" name="maps">Adres op Kaart en satelliet</a>
+<a href="#" name="tomtom">Route</a>
+<!--<a href="#" name="birdseye">Adres in Vogelblik</a> -->
+<a href="#" name="antwoordnummer">Antwoordnummer</a>
+<a href="#" name="postcode">Postcode bij adres</a> 
+<a href="#" name="adresbijpc">Adres bij postcode</a> 
+<a href="#" name="0900">Alternatief voor 0900 nummer</a> 
+<a href="#" name="gratistel">Gratis telefoonnummer</a>  
+	</ul>
+
+	<li><a href="#">Mensen</a>
+		<ul>
+	<a href="#" name="wieowie">In meerdere bronnen(WieoWie)</a>
+	<a href="#" name="pipl">In meerdere bronnen (Pipl)</a> 
+	<a href="#" name="mensnieuws">Mens in het nieuws</a>  
+	<a href="#" name="gezicht">Op gezicht</a>  
+	<a href="#" name="username">Op internet gebruikersnaam</a> 
+	<a href="#" name="email">Op mailadres</a> 
+	<a href="#" name="naam">Op (deel van) naam</a> 
+	<a href="#" name="adresviaggl">Algemeen op naam of adres</a>
+	<a href="#" name="hyves">In Hyves</a>  
+	<a href="#" name="schoolbank">In Schoolbank</a>  
+	<a href="#" name="expert">Expert (universitiar)</a>
+		</ul>
+	
+
+<li><a href="#">Nieuws, Fora, Blogs</a>
+	<ul>
+<a href="#" name="nws">Nederlands nieuws</a>
+<a href="#" name="intnws">Internationaal nieuws [EN]</a>
+<a href="#" name="twitter">In Twitter</a> 
+<a href="#" name="blogs">In blogs</a> 
+<a href="#" name="groups">In nieuwsfora</a>
+<a href="#" name="persberichten">Persberichten</a>
+<!--<a href="#" onclick="changeForm(this.firstChild.nodeValue, 'http://www.persberichten.com/persberichtfilter.aspx', 'q', '', 'as_sitesearch', 'persberichten.com', '', '', '', 'GET', 'http://www.persberichten.com/', '.gif', 'Zoekwoord:', '', 'Vul een zoekwoord in dat je wilt opzoeken via persberichten.com'); return true;">Persberichten</a> -->
+	</ul>
+
+	
+<li><a href="#">Beeld</a>
+		<ul>
+	<a href="#" name="gglvideo">Video (Youtube, Google)</a> 
+	<a href="#" name="bingvideo">Video (MSN, Hulu, Myspace)</a> 
+	<a href="#" name="bingimages">Afbeeldingen (Bing)</a> 
+	<a href="#" name="gglimages">Afbeeldingen (Google)</a>
+	<a href="#" name="yahooimages">Afbeeldingen (Yahoo)</a>			
+<!--	<a href="#" name="uitzendinggemist">In Uitzendinggemist</a> -->
+	<a href="#" name="flickr">Fotos (Flickr)</a> 
+	<a href="#" name="picasa">Fotos (Picasa)</a> 
+	</ul>
+
+
+<li><a href="#">Naslag &amp; taal</a>
+	<ul>
+<a href="#" name="wikinl">In Wikipedia [NL]</a>
+<a href="#" name="wolfram">Termen in Wolfram Alpha [EN]</a>
+<a href="#" name="vandale">In NL woordenboek</a>
+<a href="#" name="synoniemen">Synoniemen</a>
+<a href="#" name="transl">Vertaal woord naar NL</a>
+<a href="#" name="films">Films</a>
+<a href="#" name="acteurs">Acteurs</a>
+<a href="#" name="imdb">Films &amp; Acteurs [EN]</a>
+<a href="#" name="tvgids">In TV Gids</a>
+	</ul>
+
+ <li><a href="#">Sites</a>
+	<ul>
+<a href="#" name="binnensite">Zoek binnen een site</a>
+<a href="#" name="translpage">Vertaal webpagina</a>
+<a href="#" name="related">Vergelijkbare pagina's</a>
+<a href="#" name="linkto">Verwijzende pagina's</a>
+<a href="#" name="internetarchive">Oude versie van een site</a>
+<a href="#" name="domain">Gegevens domein</a>
+<a href="#" name="detailsdomain">Details domein</a>
+<a href="#" name="ip">Gegevens IP-adres</a>
+	</ul>
+ 
+	
+
+<li><a href="#">Overig</a>
+	<ul>
+<a href="#" name="mp3">Muziek (MP3 e.a.)</a> 
+<a href="#" name="marktplaats">Spullen (Marktplaats)</a>
+<a href="#" name="gmail">In Gmail</a>
+<a href="#" name="weer">Weersverwachting</a>	
+<a href="#" name="overheid">Overheid.nl</a>
+	</ul>
+
+
+</ul>
+
+
+<br/>
+<br/>
+ <h2  align="left"><a href="http://" target="_blank" id="searchurl"><span id="logo"><img id="image" src="" alt="Logo" /></span><span id="searchtitle">&nbsp;</span></a></h2>	
+<p id="descr" class="nobar">&nbsp;</p>
+
+	<div id="htmldiv" align="left">&nbsp;
+	</div>
+  
+	<div id="formdiv" align="left">
+<!--	<form target="trg" name="zoekform" id="zoekform" onsubmit="return setBar(true);" action="" method="">  -->
+	<form name="zoekform" id="zoekform" onsubmit="return subm();" action="" method="get">  
+		<p id="text1descr" >&nbsp;</p>
+		<input name="q" type="text" id="text1" size="45" onfocus="this.select()" />
+		<div style="display:none;" id="spantext2">
+		<p id="text2descr" > &nbsp;</p>
+		<input type="text" size="45" id="text2" onfocus="this.select()" /></div>
+		<input type="hidden" id="hidden1" />
+		<input type="hidden" id="hidden2" />
+		<input type="hidden" id="hidden3" />
+		<input type="hidden" id="hidden4" />
+		<input id="submit" value="Zoek" type="submit" /><br />
+	</form>
+	</div>
+
+</div>
+<div id="statusbar" align="left">&nbsp;</div>
+
+
+</div>
+
+<div id="adbanner">
+<script type="text/javascript"><!--
+google_ad_client = "pub-5457839548366721";
+/* ZOEKPLUS 728x90, gemaakt 28-5-10 */
+google_ad_slot = "4293761443";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+
+
+<!-- <iframe src="about:blank" name="trg" class="inbar" id="trg" width="100%" height="100%" ></iframe>  -->
+
+
+<div style="width: 800px" >
+
+<p><input type="checkbox" id="checktarget" onclick="return changeTarget()" /><label for="checktarget">Open resultaten in nieuw venster</label>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="#" onclick="setHomePage();return true;" id="home">Maak Startpagina</a>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">var addthis_pub="zoekplus";
+var addthis_language = "nl"; 
+var addthis_brand = "Zoek+";
+</script>
+<a href="http://www.addthis.com/bookmark.php?v=20" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s7.addthis.com/static/btn/sm-share-nl.gif" width="83" height="16" alt="Delen" style="margin-bottom: -.25em; border:0; "/></a><script type="text/javascript" src="http://s7.addthis.com/js/200/addthis_widget.js"></script>
+<!-- AddThis Button END -->&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="about.html">&copy; 2010 WvW</a>
+</p>
+</div>
+
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3143458-3");
+pageTracker._setAllowAnchor(true);
+pageTracker._trackPageview();
+} catch(err) {}</script></body></html>

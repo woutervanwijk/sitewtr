@@ -1,0 +1,104 @@
+<?xml version = "1.0" ?>
+<ControlsData-list>
+  <ControlsData>
+  <Align>Right</Align>
+  <ControlType>Image</ControlType>
+  <Action>Forward</Action>
+  <Description>Forward?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>0</Height>
+  <Caption>Forward</Caption>  
+  <Left>100%</Left>
+  <Location>Browser:Forward</Location>
+  <Picture>test2.png</Picture>
+  <MouseOverPicture>test3.png</MouseOverPicture>
+  <DownPicture>down.bmp</DownPicture>
+  <BackColor>777444</BackColor>
+  <Color>000000</Color>
+  <Name>Image1</Name>
+  <Top>0</Top>
+  <Width>10</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Left</Align>
+  <Action>Back</Action>
+  <ControlType>Image</ControlType>
+  <Description>Back?!!</Description>
+  <Caption>Back</Caption>  
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>0</Height>
+  <Left>0</Left>
+  <Location>Browser:Back</Location>
+  <BackColor>777777</BackColor>
+  <Color>444444</Color>
+  <Picture>lintoday.png</Picture>
+  <MouseOverPicture>test1.png</MouseOverPicture>
+  <DownPicture>mousover.bmp</DownPicture>
+  <Name>Image1</Name>
+  <Top>0</Top>
+  <Width>100</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <ControlType>TextBox</ControlType>
+  <DependsOn>ProjectViewer TabBar</DependsOn>
+  <Description>Location!</Description>
+  <Height>20</Height>
+  <Left>0</Left>
+  <Location>huh</Location>
+  <Action></Action>
+  <Name>Text</Name>
+  <Color>000000</Color>
+  <BackColor>555555</BackColor>
+  <NoContentType></NoContentType>
+  <Top>0</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <Caption>Nieuws</Caption>
+  <Action>setproject</Action>
+  <ControlType>Image</ControlType>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Left>10</Left>
+  <Location>projects/nieuws.xdp</Location>
+  <Picture>default.bmp</Picture>
+  <MouseOverPicture>mouseover.bmp</MouseOverPicture>
+  <Description>Click Here!!</Description>
+  <DownPicture>down.bmp</DownPicture>
+  <Name>Image1</Name>
+  <Top>10</Top>
+  <Width>100&#x25;</Width>
+  <Height>55</Height>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <Action>setproject</Action>
+  <ControlType>TabBar</ControlType>
+  <DependsOn>All Image1 Text Tabs2</DependsOn>
+  <Height>23</Height>
+  <Description>Click Here!!</Description>
+  <Left>0</Left>
+  <Location>A</Location>
+  <Name>Tabs2</Name>
+  <Top>0</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Client</Align>
+  <ControlType>Project</ControlType>
+  <DependsOn>Image1 Text Tabs2</DependsOn>
+  <Description>Click Here!!</Description>
+  <Left>0</Left>
+  <Location>B</Location>
+  <Name>ProjectViewer</Name>
+  <Top>0</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+</ControlsData-list>

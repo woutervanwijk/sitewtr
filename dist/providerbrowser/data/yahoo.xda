@@ -1,0 +1,310 @@
+<?xml version = "1.0" ?>
+<ControlsData-list>
+
+  <ControlsData>
+  <Action>HttpGet</Action>
+  <Color>000000</Color>
+  <BackColor>ff0000</BackColor>
+  <ControlType>TextBox</ControlType>
+  <Caption>Search within Yahoo!</Caption>
+  <Parent>ControlsPanel</Parent>
+  <Height>20</Height>
+  <Left>630</Left>
+  <Location>http://search.yahoo.com/bin/search?p=</Location>
+  <Name>SearchYahoo</Name>
+  <Top>45</Top>
+  <Width>150</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <Parent>SubPanel</Parent>
+  <ControlType>TextBox</ControlType>
+  <Color>000000</Color>
+  <BackColor>ffffff</BackColor>
+  <DependsOn>All</DependsOn>
+  <Description>Location!</Description>
+  <Height>20</Height>
+  <Left>6</Left>
+  <Location>huh</Location>
+  <Name>Textloc</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  <Align>Top</Align>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <BackColor>dddddd</BackColor>
+  <ControlType>Panel</ControlType>
+  <LayOut>tile</LayOut>
+  <Height>67</Height>
+  <Left>0</Left>
+  <Name>ControlsPanel</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+
+  <ControlsData>
+  <Align>Right</Align>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>Click here to go to the Yahoo! Startpage</Description>
+  <ItemHeight>50%</ItemHeight>
+  <ItemWidth>50%</ItemWidth>
+  <Picture>yahoo\logoklein.gif</Picture>
+  <Parent>ControlsPanel</Parent>
+  <Height>80</Height>
+  <LayOut>pictureright</LayOut>
+  <Location>http://www.yahoo.com/</Location>
+  <Left>200</Left>
+  <Name>Adv</Name>
+  <Top>10</Top>
+  <Width>135</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Splitter</ControlType>
+  <Align>Top</Align>
+  <Height>3</Height>
+  <Left>0</Left>
+  <Color>cc0000</Color>
+  <Name>TopSplitter</Name>
+  <Top>100</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+
+
+  <ControlsData>
+  <Action>Back</Action>
+  <Caption>Back</Caption>
+  <ControlType>Image</ControlType>
+  <Description>Back?!!</Description>
+  <Parent>ControlsPanel</Parent>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>50</Height>
+  <Left>1</Left>
+  <Location>Browser:Back</Location>
+  <Picture>yahoo\back.gif</Picture>
+  <LayOut>border</LayOut>
+  <Name>Back</Name>
+  <Top>8</Top>
+  <Color>444444</Color>
+  <MouseOverColor>cc0000</MouseOverColor>
+  <BackColor>ffffff</BackColor>
+  <Width>55</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+
+  <Picture>yahoo\forward.gif</Picture>
+
+  <Color>444444</Color>
+  <MouseOverColor>cc0000</MouseOverColor>
+  <BackColor>ffffff</BackColor>
+
+  <Top>8</Top>
+  <Width>55</Width>
+  <Height>50</Height>
+  <Left>56</Left>
+
+  <LayOut>border</LayOut>
+
+  <Caption>Forward</Caption>
+  <Description>Forward?!!</Description>
+
+  <Action>Forward</Action>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Location>Browser:Forward</Location>
+  <Parent>ControlsPanel</Parent>
+  <Name>Forward</Name>
+
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Color>444444</Color>
+  <MouseOverColor>cc0000</MouseOverColor>
+  <BackColor>ffffff</BackColor>
+
+  <Top>8</Top>
+  <Width>55</Width>
+  <Height>50</Height>
+  <Left>111</Left>
+  <LayOut>border</LayOut>
+
+  <Action>Stop</Action>
+  <Description>Stop?!!</Description>
+  <Caption>Stop</Caption>  
+  <Picture>yahoo\stop.gif</Picture>
+  <Location>Browser:Stop</Location>
+  <Parent>ControlsPanel</Parent>
+  <Name>Stop</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Color>444444</Color>
+  <MouseOverColor>cc0000</MouseOverColor>
+  <BackColor>ffffff</BackColor>
+
+  <Top>8</Top>
+  <Width>55</Width>
+  <Height>50</Height>
+  <Left>166</Left>
+  <LayOut>border</LayOut>
+
+  <Action>Refresh</Action>
+  <Description>Refresh?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Caption>Refresh</Caption>  
+  <Location>Browser:Refresh</Location>
+  <Picture>yahoo\refresh.gif</Picture>
+  <Parent>ControlsPanel</Parent>
+  <Name>Refresh</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Color>000000</Color>
+  <MouseOverColor>cc0000</MouseOverColor>
+
+  <Top>2</Top>
+  <Width>70</Width>
+  <Height>58</Height>
+  <Left>225</Left>
+
+  <Action>go</Action>
+  <Description>Bookmarks</Description>
+  <Caption>Bookmarks</Caption>  
+  <Location>%favoritesdir%</Location>
+  <Picture>yahoo\y.gif</Picture>
+  <Parent>ControlsPanel</Parent>
+  <Name>Favorites</Name>
+  <LayOut>fontbold</LayOut>
+  </ControlsData>
+
+
+
+  <ControlsData>
+  <Color>000000</Color>
+  <MouseOverColor>cc0000</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>go</Action>
+  <Description>E-mail</Description>
+  <LayOut>fontbold</LayOut>
+  <Height>60</Height>
+  <Caption>E-Mail</Caption>  
+  <Left>295</Left>
+  <Location>http://mail.yahoo.com</Location>
+  <Picture>yahoo\mail.gif</Picture>
+  <Parent>ControlsPanel</Parent>
+  <Name>email</Name>
+  <Top>0</Top>
+  <Width>60</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>000000</Color>
+  <MouseOverColor>cc0000</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>go</Action>
+  <Description>Go to your personal homepage at Yahoo!</Description>
+  <Height>60</Height>
+  <Caption>My Yahoo</Caption>  
+  <Left>355</Left>
+  <Location>http://my.yahoo.com</Location>
+  <Picture>yahoo\myyahoo.gif</Picture>
+  <LayOut>fontbold</LayOut>
+  <Parent>ControlsPanel</Parent>
+  <Name>my</Name>
+  <Top>0</Top>
+  <Width>65</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>000000</Color>
+  <MouseOverColor>cc0000</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>go</Action>
+  <Description>Go to your calendar at Yahoo!</Description>
+  <Height>60</Height>
+  <Caption>Calendar</Caption>  
+  <Left>425</Left>
+  <Location>http://calendar.yahoo.com/</Location>
+  <Picture>yahoo/calendar.gif</Picture>
+  <Parent>ControlsPanel</Parent>
+  <Name>my</Name>
+  <LayOut>fontbold</LayOut>
+  <Top>0</Top>
+  <Width>60</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>000000</Color>
+  <MouseOverColor>cc0000</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>go</Action>
+  <Description>What's new at Yahoo!?</Description>
+  <Height>60</Height>
+  <LayOut>fontbold</LayOut>
+  <Caption>What's New</Caption>  
+  <Left>490</Left>
+  <Location>http://dir.yahoo.com/new/</Location>
+  <Picture>yahoo\whatsnew.gif</Picture>
+  <Parent>ControlsPanel</Parent>
+  <Name>my</Name>
+  <Top>0</Top>
+  <Width>70</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>000000</Color>
+  <MouseOverColor>cc0000</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>go</Action>
+  <Description>Help!!!</Description>
+  <Height>60</Height>
+  <Caption>Help!</Caption>  
+  <Left>565</Left>
+  <Location>http://help.yahoo.com/</Location>
+  <Picture>yahoo\help.gif</Picture>
+  <Parent>ControlsPanel</Parent>
+  <LayOut>fontbold</LayOut>
+  <Name>my</Name>
+  <Top>0</Top>
+  <Width>60</Width>
+  </ControlsData>
+
+
+  <ControlsData>
+  <Align>Left</Align>
+  <Action>setproject</Action>
+  <ControlType>IconList</ControlType>
+  <DependsOn>Stop Text Tabs2</DependsOn>
+  <Height>100%</Height>
+  <LayOut>columns smallicons</LayOut>
+  <Description>Click Here!!</Description>
+  <Left>0</Left>
+  <Location>A</Location>
+  <Name>Tabs2</Name>
+  <Top>0</Top>
+  <Width>100</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>client</Align>
+  <ControlType>Project</ControlType>
+  <DependsOn>All SearchYahoo Refresh Stop Forward Back Text Tabs2</DependsOn>
+  <Description>Click Here!!</Description>
+  <Left>0</Left>
+  <Location>controls/yahoobrowser.xdc</Location>
+  <Name>ProjectViewer</Name>
+  <Top>0</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+</ControlsData-list>

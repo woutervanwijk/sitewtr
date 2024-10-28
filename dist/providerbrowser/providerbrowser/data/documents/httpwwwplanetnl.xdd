@@ -1,0 +1,11 @@
+<?xml version = "1.0" ?>
+  <Document>
+  <Connections>
+
+  </Connections>
+  <ContentType>URL</ContentType>
+  <DataSource>http&#x3A;&#x2F;&#x2F;www&#x2E;planet&#x2E;nl&#x2F;</DataSource>
+  <Location>httpwwwplanetnl&#x2E;xdd</Location>
+  <Name>Planet Internet</Name>
+  <TechnicalType>nl&#x2F;</TechnicalType>
+  </Document>

@@ -1,0 +1,11 @@
+<?xml version = "1.0" ?>
+  <Document>
+  <Connections>
+
+  </Connections>
+  <ContentType>URL</ContentType>
+  <DataSource>http&#x3A;&#x2F;&#x2F;www&#x2E;cnn&#x2E;com&#x2F;</DataSource>
+  <Location>httpwwwcnncom&#x2E;xdd</Location>
+  <Name>Cnn</Name>
+  <TechnicalType>com&#x2F;</TechnicalType>
+  </Document>

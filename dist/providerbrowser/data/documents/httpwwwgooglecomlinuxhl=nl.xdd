@@ -1,0 +1,11 @@
+<?xml version = "1.0" ?>
+  <Document>
+  <Connections>
+
+  </Connections>
+  <ContentType>URL</ContentType>
+  <DataSource>http&#x3A;&#x2F;&#x2F;www&#x2E;google&#x2E;com&#x2F;linux&#x3F;hl&#x3D;nl</DataSource>
+  <Location>httpwwwgooglecomlinuxhl&#x3D;nl&#x2E;xdd</Location>
+  <Name>Linux</Name>
+  <TechnicalType>com&#x2F;linux&#x3F;hl&#x3D;nl</TechnicalType>
+  </Document>

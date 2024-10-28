@@ -1,0 +1,69 @@
+<?xml version = "1.0" ?>
+  <!DOCTYPE Initialize-list [
+    <!ELEMENT Initialize-list (Initialize*) >
+    <!ELEMENT Initialize (ControlsLocation,Location,Name) >
+    <!ELEMENT ControlsLocation (#PCDATA)>
+    <!ELEMENT Location (#PCDATA)>
+    <!ELEMENT Name (#PCDATA)>
+  ]>
+<Initialize-list>
+
+  <Initialize>
+  <ControlsLocation>controls&#x2F;browser&#x2E;xdc</ControlsLocation>
+  <Location>projects&#x2F;browser&#x2E;xdp</Location>
+  <Name>Browser</Name>
+  </Initialize>
+
+  <Initialize>
+  <ControlsLocation>controls/yahoobrowser.xdc</ControlsLocation>
+  <Location>projects/yahoobrowser.xdp</Location>
+  <Name>Yahoo</Name>
+  <Picture>http://www.yahoo.com/favicon.ico</Picture>
+  </Initialize>
+
+  <Initialize>
+  <ControlsLocation>controls&#x2F;nieuws&#x2E;xdc</ControlsLocation>
+  <Location>projects&#x2F;nieuws&#x2E;xdp</Location>
+  <Picture>http://www.nu.nl/favicon.ico</Picture>
+  <Name>Nieuws</Name>
+  </Initialize>
+
+  <Initialize>
+  <ControlsLocation>controls&#x2F;compunews&#x2E;xdc</ControlsLocation>
+  <Location>projects&#x2F;compunews&#x2E;xdp</Location>
+  <Name>Computernieuws</Name>
+  </Initialize>
+
+  <Initialize>
+  <ControlsLocation>controls&#x2F;reizen&#x2E;xdc</ControlsLocation>
+  <Location>projects&#x2F;reizen&#x2E;xdp</Location>
+  <Name>Reizen</Name>
+  </Initialize>
+
+  <Initialize>
+  <ControlsLocation>controls&#x2F;zoeken&#x2E;xdc</ControlsLocation>
+  <Location>projects&#x2F;zoeken&#x2E;xdp</Location>
+  <Name>Zoeken</Name>
+  </Initialize>
+
+  <Initialize>
+  <ControlsLocation>controls&#x2F;mydocs&#x2E;xdc</ControlsLocation>
+  <Location>projects&#x2F;dbn&#x2E;xdp</Location>
+  <Name>MY Docs</Name>
+  </Initialize>
+
+  <Initialize>
+  <ControlsLocation>controls&#x2F;desktop&#x2E;xdc</ControlsLocation>
+  <Location>projects&#x2F;db2n&#x2E;xdp</Location>
+  <Name>Desktop</Name>
+  </Initialize>
+
+  <Initialize>
+  <ControlsLocation>controls&#x2F;favorites&#x2E;xdc</ControlsLocation>
+  <Location>projects&#x2F;browser2&#x2E;xdp</Location>
+  <Name>Favorites</Name>
+  </Initialize>
+
+  <LastProject>projects&#x2F;google&#x2E;xdp</LastProject>
+
+</Initialize-list>

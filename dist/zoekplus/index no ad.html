@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl"><head>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta content="true" name="MSSmartTagsPreventParsing" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="description=" content="Met Zoek+ vind je meer! Zoek eenvoudig in verschillende zoekmachines en met handige zoektrucs." />
+<meta name="keywords" content="zoeken, eenvoudig, verschillende, zoekmachines, zoektrucs, trucs, zoekplus, zoek, zoek menu" />
+<meta name="revisit-after" content="7 days" />
+<meta name="copyright" content="(c) Wouter van Wijk" />
+<meta name="author" content="Wouter van Wijk" />
+
+<link href="favicon.ico" rel="shortcut icon" />
+<link href="favicon.ico" rel="icon" />
+<script type='text/javascript' src='jquery-1.3.2.min.js'></script>
+<script type='text/javascript' src='jquery.historycookie.js'></script>
+<link rel="stylesheet" href="zoek.css" type="text/css" media="screen" />
+<script type="text/javascript" src="zoek.js">
+</script>
+ 
+<title>Zoek+</title>
+
+</head>
+ 
+<body>
+
+<br/><a href="http://www.ilovespeelgoed.nl/"><img align="right" src="img/prod.png" style="border:1px solid grey; margin-top: -5px;" alt="I Love Speelgoed" title="I Love Speelgoed" /></a>
+
+<h1><!-- <img src="img/zplogo.png" alt="Zoek+ Logo" title="Zoek+ Logo" /><br/>-->Zoek<sup>+</sup></h1>
+<br/>
+<br/>
+
+<div align="center">
+<div id="centerwidth">
+<div id="centerframe" align="left">
+
+<ul id="nav">
+<li><a href="#">Algemeen</a>
+	<ul>
+		<!--<li class="lihr"><a href="#" name="google">Met Google</a></li>-->
+ 		<li class="lihr"><a href="#" name="google">Met Google</a></li>
+		<li><a href="#" name="ixquick">In meerdere machines tegelijk</a></li>
+		<li><a href="#" name="bing">Met Bing</a></li>
+<!--		<li><a href="#" name="yahoo">Met Yahoo</a></li> -->
+		<li class="lihr"><a href="#" name="exact">Met exacte woordcombinatie</a></li>
+<!-- 		<li><a href="#" name="opdatum">Op datum</a></li> -->
+		<li><a href="#" name="eenvan">Een van de woorden (OR)</a></li>
+		<li class="lihr"><a href="#" name="pdf">In Publicaties [PDF]</a></li>
+		<li><a href="#" name="doc">In Documenten [Word]</a></li>
+		<li><a href="#" name="xls">In Spreadsheets [Excel]</a></li>
+		<li><a href="#" name="ppt">In Presentaties [Powerpoint]</a></li>
+	</ul>
+</li>
+
+<li><a href="#">Telefoon, Adres</a>
+	<ul>
+		<li class="lihr"><a href="#" name="telefoongids">In Telefoongids</a></li>
+		<li><a href="#" name="bedrijf">Bedrijf</a></li>
+		<li class="lihr"><a href="#" name="optelnr">Op telefoonnummer</a></li> 
+		<li><a href="#" name="opadres">Op adres</a></li>
+		<li class="lihr"><a href="#" name="maps">Adres op Kaart en satelliet</a></li>
+		<li><a href="#" name="tomtom">Route</a></li>
+<!--		<li><a href="#" name="birdseye">Adres in Vogelblik</a></li> -->
+		<li class="lihr"><a href="#" name="antwoordnummer">Antwoordnummer</a></li>
+		<li><a href="#" name="postcode">Postcode bij adres</a></li> 
+		<li><a href="#" name="adresbijpc">Adres bij postcode</a></li> 
+		<li class="lihr"><a href="#" name="0900">Alternatief voor 0900 nummer</a></li> 
+		<li><a href="#" name="gratistel">Gratis telefoonnummer</a></li>  
+	</ul>
+</li>
+	<li><a href="#">Mensen</a>
+		<ul>
+			<li class="lihr"><a href="#" name="wieowie">In meerdere bronnen(WieoWie)</a></li>
+			<li><a href="#" name="pipl">In meerdere bronnen (Pipl)</a></li> 
+			<li class="lihr"><a href="#" name="mensnieuws">Mens in het nieuws</a></li>  
+			<li class="lihr"><a href="#" name="gezicht">Op gezicht</a></li>  
+			<li><a href="#" name="username">Op internet gebruikersnaam</a></li> 
+			<li ><a href="#" name="email">Op mailadres</a></li> 
+			<li class="lihr"><a href="#" name="naam">Op (deel van) naam</a></li> 
+			<li><a href="#" name="adresviaggl">Algemeen op naam of adres</a></li>
+			<li class="lihr"><a href="#" name="hyves">In Hyves</a></li>  
+			<li><a href="#" name="schoolbank">In Schoolbank</a></li>  
+			<li class="lihr"><a href="#" name="expert">Expert (universitiar)</a></li>
+		</ul>
+	</li>
+
+<li><a href="#">Nieuws, Fora, Blogs</a>
+	<ul>
+		<li class="lihr"><a href="#" name="twitter">In Twitter</a></li> 
+		<li><a href="#" name="blogs">In blogs</a></li> 
+		<li class="lihr"><a href="#" name="nws">Nederlands nieuws</a></li>
+		<li><a href="#" name="intnws">Internationaal nieuws [EN]</a></li>
+		<li class="lihr"><a href="#" name="groups">In nieuwsfora</a></li>
+		<li class="lihr"><a href="#" name="persberichten">Persberichten</a></li>
+		<li class="lihr"><a href="#" name="oudekranten">Oude kranten</a></li>
+<!--		<li><a href="#" onclick="changeForm(this.firstChild.nodeValue, 'http://www.persberichten.com/persberichtfilter.aspx', 'q', '', 'as_sitesearch', 'persberichten.com', '', '', '', 'GET', 'http://www.persberichten.com/', '.gif', 'Zoekwoord:', '', 'Vul een zoekwoord in dat je wilt opzoeken via persberichten.com'); return true;">Persberichten</a></li> -->
+	</ul>
+</li>
+	
+<li><a href="#">Beeld</a>
+		<ul>
+			<li class="lihr"><a href="#" name="gglvideo">Video (Youtube, Google)</a></li> 
+			<li><a href="#" name="bingvideo">Video (MSN, Hulu, Myspace)</a></li> 
+			<li class="lihr"><a href="#" name="bingimages">Afbeeldingen (Bing)</a></li> 
+			<li><a href="#" name="gglimages">Afbeeldingen (Google)</a></li>
+<!--			<li><a href="#" name="yahooimages">Afbeeldingen (Yahoo)</a></li>			
+			<li><a href="#" name="uitzendinggemist">In Uitzendinggemist</a></li> -->
+			<li class="lihr"><a href="#" name="flickr">Fotos (Flickr)</a></li> 
+			<li><a href="#" name="picasa">Fotos (Picasa)</a></li> 
+	</ul>
+</li>
+
+<li><a href="#">Naslag &amp; taal</a>
+	<ul>
+		<li class="lihr"><a href="#" name="wikinl">In Wikipedia [NL]</a></li>
+		<li><a href="#" name="wolfram">Termen in Wolfram Alpha [EN]</a></li>
+		<li class="lihr"><a href="#" name="vandale">In NL woordenboek</a></li>
+		<li><a href="#" name="synoniemen">Synoniemen</a></li>
+		<li><a href="#" name="transl">Vertaal woord naar NL</a></li>
+		<li class="lihr"><a href="#" name="films">Films</a></li>
+		<li><a href="#" name="acteurs">Acteurs</a></li>
+		<li><a href="#" name="imdb">IMDb [EN]</a></li>
+		<li><a href="#" name="tvgids">In TV Gids</a></li>
+	</ul>
+</li>
+ <li><a href="#">Sites</a>
+	<ul>
+		<li class="lihr"><a href="#" name="binnensite">Zoek binnen een site</a></li>
+		<li class="lihr"><a href="#" name="translpage">Vertaal webpagina</a></li>
+		<li class="lihr"><a href="#" name="related">Vergelijkbare pagina's</a></li>
+		<li><a href="#" name="linkto">Verwijzende pagina's</a></li>
+		<li><a href="#" name="internetarchive">Oude versie van een site</a></li>
+		<li><a href="#" name="googlecache">Google Cache</a></li>
+		<li class="lihr"><a href="#" name="domain">Gegevens domein</a></li>
+		<li><a href="#" name="detailsdomain">Details domein</a></li>
+		<li><a href="#" name="ip">Gegevens IP-adres</a></li>
+	</ul>
+ </li>
+	
+
+<li><a href="#">Overig</a>
+	<ul>
+		<li class="lihr"><a href="#" name="statline">Statistieken CBS</a></li> 
+		<li class="lihr"><a href="#" name="mp3">Muziek (MP3 e.a.)</a></li> 
+		<li class="lihr"><a href="#" name="marktplaats">Spullen (Marktplaats)</a></li>
+		<li class="lihr"><a href="#" name="gmail">In Gmail</a></li>
+		<li class="lihr"><a href="#" name="weer">Weersverwachting</a></li>	
+		<li class="lihr"><a href="#" name="overheid">Overheid.nl</a></li>
+	</ul>
+</li>
+
+</ul>
+
+
+<br/>
+<br/>
+			<div id="formdiv" >
+                <a href="http://" target="_blank" id="searchurl"><img id="image" src="img/google.gif" alt="Logo" style="margin: 2px;" /><h2 id="searchtitle">&nbsp;</h2></a>
+
+				<form name="zoekform" id="zoekform" onsubmit="return subm(this);" class="form" action="" method="get">  
+					<div id="spantext1">&nbsp</div>
+					<input name="q" type="text" id="text1" size="45" onfocus="this.select()" placeholder="..." />
+<br/>
+
+					<div id="input2div">
+						<br/>
+						<div id="spantext2">&nbsp</div>
+						<input type="text" size="45" id="text2" onfocus="this.select()"  placeholder="..." />
+					</div>
+					<input type="hidden" id="hidden1" />
+					<input type="hidden" id="hidden2" />
+					<input type="hidden" id="hidden3" />
+					<input type="hidden" id="hidden4" />
+				
+
+					<div id="input3div">
+						<br/>
+						<div id="divextrahtml">&nbsp;</div>
+					</div>
+<br/>
+					<input id="submitf" value="Zoek" type="submit"  /> 
+				</form>
+				
+			</div>
+        </div>
+
+<div id="statusbar" align="left">&nbsp;</div>
+
+
+
+</div>
+
+<div id="adbanner">
+<script type="text/javascript"><!--
+google_ad_client = "pub-5457839548366721";
+/* ZOEKPLUS 728x90, gemaakt 28-5-10 */
+google_ad_slot = "4293761443";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+
+
+<!-- <iframe src="about:blank" name="trg" class="inbar" id="trg" width="100%" height="100%" ></iframe>  -->
+
+
+<div style="width: 800px" >
+
+<p><input type="checkbox" id="checktarget" onclick="return changeTarget()" /><label for="checktarget">Open resultaten in nieuw venster</label>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="#" onclick="setHomePage();return true;" id="home">Maak Startpagina</a>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">var addthis_pub="zoekplus";
+var addthis_language = "nl"; 
+var addthis_brand = "Zoek+";
+</script>
+<a href="http://www.addthis.com/bookmark.php?v=20" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s7.addthis.com/static/btn/sm-share-nl.gif" width="83" height="16" alt="Delen" style="margin-bottom: -.25em; border:0; "/></a><script type="text/javascript" src="http://s7.addthis.com/js/200/addthis_widget.js"></script>
+<!-- AddThis Button END -->&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="about.html">&copy; WvW</a>
+</p>
+</div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3143458-3");
+pageTracker._setAllowAnchor(true);
+pageTracker._trackPageview();
+} catch(err) {}</script></body></html>

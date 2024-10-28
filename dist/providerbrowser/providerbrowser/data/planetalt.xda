@@ -1,0 +1,640 @@
+<?xml version = "1.0" ?>
+<ControlsData-list>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Name>Venster</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Name>Bewerk</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Name>Planet</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Name>Hulp</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://web.planet.nl/klantenservice</Location>
+  <Parent>Hulp</Parent>
+  <Name>Klantenservice</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://web.planet.nl/klantenservice/helpdesk/</Location>
+  <Parent>Hulp</Parent>
+  <Name>Helpdesk</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://web.planet.nl/klantenservice/helpdesk/servicelijn.html</Location>
+  <Parent>Hulp</Parent>
+  <Name>Servicelijn bellen</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://web.planet.nl/abonnees/servicelijn/mededelingen/</Location>
+  <Parent>Hulp</Parent>
+  <Name>Mededelingen</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Hulp</Parent>
+  <Name>-</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://web.planet.nl/mailform/</Location>
+  <Parent>Hulp</Parent>
+  <Name>Mail Planet Support</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://cgi02.planet.nl/cgi-bin/mutate.cgi</Location>
+  <Parent>Hulp</Parent>
+  <Name>Mijn Gegevens</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://zoek.planet.nl/cgi-bin/Planet/zoekredir.cgi</Location>
+  <Parent>Planet</Parent>
+  <Name>Zoeken</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://web.planet.nl/chat/index.html</Location>
+  <Parent>Planet</Parent>
+  <Name>Chatten</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://web.planet.nl/webgids/</Location>
+  <Parent>Planet</Parent>
+  <Name>Webgids</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Planet</Parent>
+  <Name>-</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://www.planet.nl/business/</Location>
+  <Parent>Planet</Parent>
+  <Name>Business</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://www.planet.nl/computer/</Location>
+  <Parent>Planet</Parent>
+  <Name>Computer</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://www.planet.nl/kids/</Location>
+  <Parent>Planet</Parent>
+  <Name>Kids</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://www.planet.nl/discovery/</Location>
+  <Parent>Planet</Parent>
+  <Name>Discovery</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://www.planet.nl/game/</Location>
+  <Parent>Planet</Parent>
+  <Name>Game</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://www.planet.nl/sex/</Location>
+  <Parent>Planet</Parent>
+  <Name>Sex</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://www.planet.nl/living/</Location>
+  <Parent>Planet</Parent>
+  <Name>Living</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://www.planet.nl/movie/</Location>
+  <Parent>Planet</Parent>
+  <Name>Movie</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://www.planet.nl/music/</Location>
+  <Parent>Planet</Parent>
+  <Name>Music</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://www.planet.nl/news/</Location>
+  <Parent>Planet</Parent>
+  <Name>News</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://www.planet.nl/sport/</Location>
+  <Parent>Planet</Parent>
+  <Name>Sport</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Go</Action>
+  <Location>http://www.planet.nl/travel/</Location>
+  <Parent>Planet</Parent>
+  <Name>Travel</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Action>Refresh</Action>
+  <Name>Vernieuw</Name>
+  <Parent>Bewerk</Parent>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Bewerk</Parent>
+  <Action>selectall</Action>
+  <Name>Selecteer Alles</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Bewerk</Parent>
+  <Action>paste</Action>
+  <Name>Plakken</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Bewerk</Parent>
+  <Action>copy</Action>
+  <Name>Kopieren</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Bewerk</Parent>
+  <Name>-</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Bewerk</Parent>
+  <Action>browseroptions</Action>
+  <Name>&Browser Opties</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Bewerk</Parent>
+  <Action>internetoptions</Action>
+  <Name>&Internet Opties</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Bewerk</Parent>
+  <Action>Go</Action>
+  <Location>http://cgi02.planet.nl/cgi-bin/mutate.cgi</Location>
+  <Name>Mijn Gegevens</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Venster</Parent>
+  <Action>newwindow</Action>
+  <Name>Nieuw Venster</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Venster</Parent>
+  <Location>http://www.davincimedia.nl/xda/kidsplanet.xda</Location>
+  <Action>newwindow</Action>
+  <Name>Kids Planet</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Venster</Parent>
+  <Action></Action>
+  <Name>-</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Venster</Parent>
+  <Action>printpreview</Action>
+  <Name>Print Preview</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Venster</Parent>
+  <Action>print</Action>
+  <Name>Print Venster</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Venster</Parent>
+  <Name>-</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>menu</ControlType>
+  <Parent>Venster</Parent>
+  <Action>closewindow</Action>
+  <Name>Sluit Venster</Name>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <Align>Client</Align>
+  <ControlType>TextBox</ControlType>
+  <Color>222222</Color>
+  <DependsOn>All</DependsOn>
+  <Description>Location!</Description>
+  <Parent>TopPanel</Parent>
+  <Height>20</Height>
+  <Left>6</Left>
+  <Location>huh</Location>
+  <Name>Textloc</Name>
+  <Top>80</Top>
+  <Width>350</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Left</Align>
+  <BackColor>99CC00</BackColor>
+  <ControlType>Panel</ControlType>
+  <Height>100%</Height>
+  <Left>0</Left>
+  <Name>LeftPanel</Name>
+  <Top>0</Top>
+  <Width>100</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Right</Align>
+  <BackColor>99CC00</BackColor>
+  <ControlType>Panel</ControlType>
+  <Height>100%</Height>
+  <Left>90%</Left>
+  <Name>RightPanel</Name>
+  <Top>0</Top>
+  <Width>90</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Top</Align>
+  <BackColor>000066</BackColor>
+  <ControlType>Panel</ControlType>
+  <Height>30</Height>
+  <Left>0</Left>
+  <Name>TopPanel</Name>
+  <Top>0</Top>
+  <Width>50%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Bottom</Align>
+  <BackColor>000066</BackColor>
+  <ControlType>Panel</ControlType>
+  <Height>30</Height>
+  <Left>0</Left>
+  <Name>SubPanel</Name>
+  <Top>10</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Bottom</Align>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <MouseOverPicture>planet/pilogomouseover.gif</MouseOverPicture>
+  <Picture>planet/pilogo.gif</Picture>
+  <Height>80</Height>
+  <Parent>LeftPanel</Parent>
+  <LayOut>picturecenter</LayOut>
+  <Location>http://www.pi.net/</Location>
+  <Left>200</Left>
+  <Name>Adv2</Name>
+  <Top>10</Top>
+  <Width>100</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>sex!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>320</Left>
+  <Location>http://www.pi.net/sex/</Location>
+  <Picture>planet\sex.gif</Picture>
+  <MouseOverPicture>planet\sexmouseover.gif</MouseOverPicture>
+  <Name>sex</Name>
+  <Top>5</Top>
+  <Width>40</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>kids!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>280</Left>
+  <Location>http://www.pi.net/kids/</Location>
+  <Picture>planet\kids.gif</Picture>
+  <MouseOverPicture>planet\kidsmouseover.gif</MouseOverPicture>
+  <Name>kids</Name>
+  <Top>5</Top>
+  <Width>43</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>games!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>230</Left>
+  <Location>http://www.pi.net/game/</Location>
+  <Picture>planet\game.gif</Picture>
+  <MouseOverPicture>planet\gamemouseover.gif</MouseOverPicture>
+  <Name>game</Name>
+  <Top>5</Top>
+  <Width>51</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>discovery!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>150</Left>
+  <Location>http://www.pi.net/discovery/</Location>
+  <Picture>planet\discovery.gif</Picture>
+  <MouseOverPicture>planet\discoverymouseover.gif</MouseOverPicture>
+  <Name>Discovery</Name>
+  <Top>5</Top>
+  <Width>77</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>Computernieuws!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>70</Left>
+  <Location>http://www.pi.net/computer/</Location>
+  <Picture>planet\computer.gif</Picture>
+  <MouseOverPicture>planet\computermouseover.gif</MouseOverPicture>
+  <Name>computers</Name>
+  <Top>5</Top>
+  <Width>78</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>Business!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>5</Left>
+  <Location>http://www.pi.net/business/</Location>
+  <Picture>planet\business.gif</Picture>
+  <MouseOverPicture>planet\businessmouseover.gif</MouseOverPicture>
+  <Name>Business</Name>
+  <Top>5</Top>
+  <Width>66</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>HttpGet</Action>
+  <Color>ffffff</Color>
+  <BackColor>000066</BackColor>
+  <ControlType>TextBox</ControlType>
+  <Description>Planet met Planet!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>20</Height>
+  <Left>80%</Left>
+  <Location>http://zoek.planet.nl/cgi-bin/Planet/zoekredir.cgi?q=</Location>
+  <Name>TextSearch</Name>
+  <Top>5</Top>
+  <Width>150</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Align>Top</Align>
+  <Action>go</Action>
+  <Description>Bookmarks</Description>
+  <Height>75</Height>
+  <Caption>Favorieten</Caption>  
+  <Left>5</Left>
+  <Location>%favoritesdir%</Location>
+  <Picture>planet\book.gif</Picture>
+  <MouseOverPicture>planet\bookmouseover.gif</MouseOverPicture>
+  <Parent>RightPanel</Parent>
+  <Name>Favorites</Name>
+  <Top>100</Top>
+  <Width>75</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Bottom</Align>
+  <ControlType>Image</ControlType>
+  <Action>go</Action>
+  <Description>E-mail</Description>
+  <Height>75</Height>
+  <Caption>E-Mail</Caption>  
+  <Left>5</Left>
+  <Location>http://webmail.planet.nl/</Location>
+  <Picture>planet\email.gif</Picture>
+  <MouseOverPicture>planet\emailmouseover.gif</MouseOverPicture>
+  <Parent>RightPanel</Parent>
+  <Name>email</Name>
+  <Top>250</Top>
+  <Width>75</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Align>Top</Align>
+  <Action>go</Action>
+  <Description>De Planet Internet Startpagina</Description>
+  <Height>75</Height>
+  <Caption>Startpagina</Caption>  
+  <Left>5</Left>
+  <Location>http://www.planet.nl/</Location>
+  <Picture>planet\home.gif</Picture>
+  <MouseOverPicture>planet\homemouseover.gif</MouseOverPicture>
+  <Parent>LeftPanel</Parent>
+  <Name>Home</Name>
+  <Top>150</Top>
+  <Width>75</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Align>Client</Align>
+  <Action>Forward</Action>
+  <Description>Forward?!!</Description>
+  <BackColor>88bb00</BackColor>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>50</Height>
+  <LayOut>picturecenter border</LayOut>
+  <Left>5</Left>
+  <Location>Browser:Forward</Location>
+  <MouseOverPicture>planet\forwardmouseover.gif</MouseOverPicture>
+  <Picture>planet\forward.gif</Picture>
+  <Parent>RightPanel</Parent>
+  <Name>Forward</Name>
+  <Top>5</Top>
+  <Width>75</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Client</Align>
+  <Action>Back</Action>
+  <BackColor>88bb00</BackColor>
+  <ControlType>Image</ControlType>
+  <Description>Back?!!</Description>
+  <Parent>LeftPanel</Parent>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>50</Height>
+  <Left>5</Left>
+  <Location>Browser:Back</Location>
+  <Picture>planet\back.gif</Picture>
+  <MouseOverPicture>planet\backmouseover.gif</MouseOverPicture>
+  <Name>Back</Name>
+  <Top>5</Top>
+  <LayOut>border</LayOut>
+  <Width>50</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Right</Align>
+  <ControlType>Image</ControlType>
+  <Color>ffffff</Color>
+  <MouseOverColor>99CC00</MouseOverColor>
+  <Action>Refresh</Action>
+  <Description>Refresh?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>30</Height>
+  <Caption>Refresh</Caption>  
+  <Left>5</Left>
+  <Location>Browser:Refresh</Location>
+  <Parent>TopPanel</Parent>
+  <Name>Refresh</Name>
+  <Top>0</Top>
+  <Width>75</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Left</Align>
+  <Color>ffffff</Color>
+  <MouseOverColor>99CC00</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>Stop</Action>
+  <Description>Stop?!!</Description>
+  <Height>30</Height>
+  <Caption>Stop</Caption>  
+  <Left>5</Left>
+  <Location>Browser:Stop</Location>
+  <Parent>TopPanel</Parent>
+  <Name>Stop</Name>
+  <Top>0</Top>
+  <Width>60</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Client</Align>
+  <ControlType>Project</ControlType>
+  <DependsOn>All Refresh Stop Forward Back Text Tabs2</DependsOn>
+  <Description>Click Here!!</Description>
+  <Left>0</Left>
+  <Location>controls/planetbrowser.xdc</Location>
+  <Name>ProjectViewer</Name>
+  <Top>0</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Bottom</Align>
+  <Action>setproject</Action>
+  <ControlType>TabBar</ControlType>
+  <DependsOn>Stop Text Tabs2</DependsOn>
+  <Height>23</Height>
+  <Description>Click Here!!</Description>
+  <Left>0</Left>
+  <Location>contr</Location>
+  <Name>Tabs2</Name>
+  <Top>100%</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+</ControlsData-list>

@@ -1,0 +1,345 @@
+<?xml version = "1.0" ?>
+<ControlsData-list>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>TextBox</ControlType>
+  <Color>000066</Color>
+  <BackColor>99CC00</BackColor>
+  <DependsOn>All</DependsOn>
+  <Description>Location!</Description>
+  <Parent>ControlsPanel</Parent>
+  <Height>20</Height>
+  <Left>6</Left>
+  <Location>huh</Location>
+  <Name>Textloc</Name>
+  <Top>80</Top>
+  <Width>350</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>HttpGet</Action>
+  <Color>ffffff</Color>
+  <Caption>Doorzoek Internet!</Caption>
+  <BackColor>ff00ff</BackColor>
+  <ControlType>TextBox</ControlType>
+  <Description>Zoekplanet!</Description>
+  <Parent>ControlsPanel</Parent>
+  <Height>20</Height>
+  <Left>320</Left>
+  <Location>http://zoek.kidsplanet.nl/cgi-bin/zoeken/zoekredir.cgi?zoekbron=kids-external&zoekterm=</Location>
+  <Name>TextISearch</Name>
+  <Top>20</Top>
+  <Width>200</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>HttpGet</Action>
+  <Color>ffffff</Color>
+  <Caption>Doorzoek Kidsplanet!</Caption>
+  <BackColor>aa2222</BackColor>
+  <ControlType>TextBox</ControlType>
+  <Description>Zoekplanet!</Description>
+  <Parent>ControlsPanel</Parent>
+  <Height>20</Height>
+  <Left>320</Left>
+  <Location>http://zoek.kidsplanet.nl/cgi-bin/zoeken/zoekredir.cgi?zoekbron=kids-internal&zoekterm=</Location>
+  <Name>TextSearch</Name>
+  <Top>45</Top>
+  <Width>200</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <BackColor>ff9900</BackColor>
+  <Align>Top</Align>
+  <ControlType>Panel</ControlType>
+  <LayOut>tile</LayOut>
+  <Height>102</Height>
+  <Left>0</Left>
+  <Name>ControlsPanel</Name>
+  <Top>0</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Bottom</Align>
+  <BackColor>dddddd</BackColor>
+  <ControlType>Panel</ControlType>
+  <Height>25</Height>
+  <LayOut>tile</LayOut>
+  <Left>0</Left>
+  <Name>SubPanel</Name>
+  <Top>100</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>Right</Align>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Picture>http://www.kidsplanet.nl/kids/gfx/gez_pics/kidsplanet.gif</Picture>
+  <Height>31</Height>
+  <Parent>ControlsPanel</Parent>
+  <LayOut>pictureleft</LayOut>
+  <Location>http://www.kidsplanet.nl/</Location>
+  <Left>200</Left>
+  <Name>logo</Name>
+  <Top>10</Top>
+  <Width>160</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Splitter</ControlType>
+  <Align>Top</Align>
+  <Height>3</Height>
+  <Left>0</Left>
+  <Color>2222AA</Color>
+  <Name>TopSplitter</Name>
+  <Top>100</Top>
+  <Width>100%</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>Horen!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>0</Left>
+  <Location>http://www.kidsplanet.nl/horen/</Location>
+  <Picture>http://www.kidsplanet.nl/kids/gfx/kop/horen.gif</Picture>
+  <Name>Horen</Name>
+  <Top>1</Top>
+  <Width>102</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>Lachen!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>104</Left>
+  <Location>http://www.kidsplanet.nl/lachen/</Location>
+  <Picture>http://www.kidsplanet.nl/kids/gfx/kop/lachen.gif</Picture>
+  <Name>Lachen</Name>
+  <Top>1</Top>
+  <Width>102</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>Doen!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>206</Left>
+  <Location>http://www.kidsplanet.nl/doen/</Location>
+  <Picture>http://www.kidsplanet.nl/kids/gfx/kop/doen.gif</Picture>
+  <Name>Doen</Name>
+  <Top>1</Top>
+  <Width>102</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>Weten!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>310</Left>
+  <Location>http://www.kidsplanet.nl/weten/</Location>
+  <Picture>http://www.kidsplanet.nl/kids/gfx/kop/weten.gif</Picture>
+  <Name>Weten</Name>
+  <Top>1</Top>
+  <Width>102</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>Spelen!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>414</Left>
+  <Location>http://www.kidsplanet.nl/spelen/</Location>
+  <Picture>http://www.kidsplanet.nl/kids/gfx/kop/spelen.gif</Picture>
+  <Name>Spelen</Name>
+  <Top>1</Top>
+  <Width>102</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>Lezen!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>518</Left>
+  <Location>http://www.kidsplanet.nl/lezen/</Location>
+  <Picture>http://www.kidsplanet.nl/kids/gfx/kop/lezen.gif</Picture>
+  <Name>Lezen</Name>
+  <Top>1</Top>
+  <Width>102</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>Kletsen!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>622</Left>
+  <Location>http://www.kidsplanet.nl/kletsen/</Location>
+  <Picture>http://www.kidsplanet.nl/kids/gfx/kop/kletsen.gif</Picture>
+  <Name>Kletsen</Name>
+  <Top>1</Top>
+  <Width>102</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <ControlType>Image</ControlType>
+  <Description>Kijken!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>21</Height>
+  <Left>726</Left>
+  <Location>http://www.kidsplanet.nl/kijken/</Location>
+  <Picture>http://www.kidsplanet.nl/kids/gfx/kop/kijken.gif</Picture>
+  <Name>Kijken</Name>
+  <Top>1</Top>
+  <Width>102</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>go</Action>
+  <Align>Right</Align>
+<Caption>Help</Caption>
+  <ControlType>Image</ControlType>
+  <Description>Kijken!</Description>
+  <Parent>SubPanel</Parent>
+  <Height>34</Height>
+  <Left>830</Left>
+  <Location>http://web.kidsplanet.nl/help/</Location>
+  <Name>Kijken</Name>
+  <LayOut>texttop</LayOut> 
+  <Top>1</Top>
+  <Width>47</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Action>Back</Action>
+  <ControlType>Image</ControlType>
+  <Description>Back?!!</Description>
+  <Parent>ControlsPanel</Parent>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>65</Height>
+  <Left>10</Left>
+  <Location>Browser:Back</Location>
+  <Picture>planet\kidsback.gif</Picture>
+  <MouseOverPicture>planet\backmouseover.gif</MouseOverPicture>
+  <Name>Back</Name>
+  <Top>10</Top>
+  <Width>65</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Action>Forward</Action>
+  <Description>Forward?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>65</Height>
+  <Left>75</Left>
+  <Location>Browser:Forward</Location>
+  <MouseOverPicture>planet\forwardmouseover.gif</MouseOverPicture>
+  <Picture>planet\kidsforward.gif</Picture>
+  <Parent>ControlsPanel</Parent>
+  <Name>Forward</Name>
+  <Top>10</Top>
+  <Width>65</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>000066</Color>
+  <LayOut>border</LayOut>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>go</Action>
+  <Description>E-mail</Description>
+  <Height>75</Height>
+  <Caption>E-Mail</Caption>  
+  <Left>230</Left>
+  <Location>http://webmail.kidsplanet.nl/</Location>
+  <Picture>planet\email.gif</Picture>
+  <MouseOverPicture>planet\emailmouseover.gif</MouseOverPicture>
+  <Parent>ControlsPanel</Parent>
+  <Name>email</Name>
+  <Top>3</Top>
+  <Width>85</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Color>000066</Color>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <Action>go</Action>
+  <LayOut>border</LayOut>
+  <Description>De Kidsplanet Startpagina</Description>
+  <Height>75</Height>
+  <Caption>Kids Start</Caption>  
+  <Left>141</Left>
+  <Location>http://www.kidsplanet.nl/</Location>
+  <Picture>planet\kidshome.gif</Picture>
+  <MouseOverPicture>planet\homemouseover.gif</MouseOverPicture>
+  <Parent>ControlsPanel</Parent>
+  <Name>Home</Name>
+  <Top>3</Top>
+  <Width>85</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <ControlType>Image</ControlType>
+  <Color>000066</Color>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <Action>Refresh</Action>
+  <Description>Refresh?!!</Description>
+  <DependsOn>Text Tabs2</DependsOn>
+  <Height>30</Height>
+  <Caption>Refresh</Caption>  
+  <Left>420</Left>
+  <Location>Browser:Refresh</Location>
+  <Parent>ControlsPanel</Parent>
+  <Name>Refresh</Name>
+  <Top>70</Top>
+  <Width>60</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Color>000066</Color>
+  <MouseOverColor>5555bb</MouseOverColor>
+  <ControlType>Image</ControlType>
+  <Action>Stop</Action>
+  <Description>Stop?!!</Description>
+  <Height>30</Height>
+  <Caption>Stop</Caption>  
+  <Left>370</Left>
+  <Location>Browser:Stop</Location>
+  <Parent>ControlsPanel</Parent>
+  <Name>Stop</Name>
+  <Top>70</Top>
+  <Width>60</Width>
+  </ControlsData>
+
+  <ControlsData>
+  <Align>client</Align>
+  <ControlType>Project</ControlType>
+  <DependsOn>All Refresh Stop Forward Back Text Tabs2</DependsOn>
+  <Description>Click Here!!</Description>
+  <Left>0</Left>
+  <Location>controls/kidsplanetbrowser.xdc</Location>
+  <Name>ProjectViewer</Name>
+  <Top>0</Top>
+  <Width>100&#x25;</Width>
+  </ControlsData>
+
+</ControlsData-list>
